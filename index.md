@@ -62,4 +62,4 @@ Note: we can see above picture that '/' contains 'Library', 'System', 'Users', a
 ![Image](helloWorldCode.png)
 --------
 
-Completed: April 8th, 2024  |  Lab due: April 9th, 2024  |  GitHub link: https://naoy220.github.io/cse15l-lab-reports/index2.html
+Completed: April 8th, 2024  |  Lab due: April 9th, 2024  |  GitHub link: https://naoy220.github.io/cse15l-lab-reports/labReport1.html
