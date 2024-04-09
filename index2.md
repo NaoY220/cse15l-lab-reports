@@ -45,11 +45,17 @@ Note: when I buy my laptop, I set Japanese language, so you will see Japanese, b
 - The absolute path to the working directory was right before the command was run : /
 - When I enter cd /, I see the change from ~yoshidanao to /yoshidanao. It means the working directory was set to root folder /.
 - When I enter ls, it shows list under the root folder /.
-![Image]()
+![Image](rootFolderList.png)
+Note: we can see above picture that / contains Library, System, Users, and Application. I am not sure why there are less folders than the list displayed by ls. I see Volumes folder contains root folder /, so I think the folders I cannot see in the above picture contain root folder inside itself, and it prevent us seeing it. 
 - When I enter cat, it displays error because / (argument) is a directory and it cannot process to print out. 
 --------
 
 3. Share an example of using the command with a path to a file as an argument.
 ![Image](WithFile.png)
+
+- The absolute path to the working directory was right before the command was run : /Users/yoshidanao/Documents
+- When I enter cd Documents, I see the change from ~yoshidanao to Documents yoshidanao. It means that Documents was set as working directory, and the absolute path I mentioned above is set by cd.
+- When I enter ls GitHub, I see the list of things contained in GitHub folder. Note that GitHub folder is inside the Documents folder.
+- When I enter cat helloWorld.java that is inside the Documents, it displayed the entire code of this java file. 
 --------
 
