@@ -31,14 +31,22 @@ You will upload your submission by publishing the page on Github Pages, then pri
 ![Image](WithNoArgument.png)
 
 - The absolute path to the working directory was right before the command was run : /Users/yoshidanao
-- When I enter cd with no argument, it go back to the home environment, and  In my case, ~yoshidanao is the home environment. When I type cd, the status is already in home environment, so for our eyes, it does not do anything.
+- When I enter cd with no argument, it go back to the home environment, and  In my case, ~yoshidanao represent the home environment(default working directory). When I type cd, the status is already in home environment, so for our eyes, it does not do anything.
 - When I enter ls, ls is list command, so it display what folders/documents the yoshidanao folder has.
 ![Image](UserYoshidanaoDocs.png)
-- 
+Note: when I buy my laptop, I set Japanese language, so you will see Japanese, but these are the same folders and documents as what I got by ls command. Also, we can see the absolute path at the bottom of picture.
+- When I enter cat, it does not do anything because I need to put documents which contains some texts to print out using cat. 
+
 --------
    
 2. Share an example of using the command with a path to a directory as an argument.
 ![Image](WithDirectory.png)
+
+- The absolute path to the working directory was right before the command was run : /
+- When I enter cd /, I see the change from ~yoshidanao to /yoshidanao. It means the working directory was set to root folder /.
+- When I enter ls, it shows list under the root folder /.
+![Image]()
+- When I enter cat, it displays error because / (argument) is a directory and it cannot process to print out. 
 --------
 
 3. Share an example of using the command with a path to a file as an argument.
