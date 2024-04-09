@@ -60,7 +60,8 @@ Note: we can see above picture that '/' contains 'Library', 'System', 'Users', a
 - When I enter 'cat helloWorld.java' that is inside the Documents, it displayed the entire code of this java file.
 ![Image](DocumentsList.png)
 ![Image](helloWorldCode.png)
-Note:
+
+
 --------
 
 Completed: April 8th, 2024  |  Lab due: April 9th, 2024  |  GitHub link: https://naoy220.github.io/cse15l-lab-reports/labReport1.html
