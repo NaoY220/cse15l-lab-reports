@@ -28,13 +28,20 @@ You will upload your submission by publishing the page on Github Pages, then pri
 ***
 
 1. Example of using the command with no arguments.
+![Image](WithNoArgument.png)
 
-
+- The absolute path to the working directory was right before the command was run : /Users/yoshidanao
+- When I enter cd with no argument, it go back to the home environment, and  In my case, ~yoshidanao is the home environment. When I type cd, the status is already in home environment, so for our eyes, it does not do anything.
+- When I enter ls, ls is list command, so it display what folders/documents the yoshidanao folder has.
+![Image](WithNoArgument.png)
+- 
 --------
    
 2. Share an example of using the command with a path to a directory as an argument.
+![Image](WithDirectory.png)
 --------
 
 3. Share an example of using the command with a path to a file as an argument.
+![Image](WithFile.png)
 --------
 
