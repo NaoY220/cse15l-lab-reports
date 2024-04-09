@@ -33,7 +33,7 @@ You will upload your submission by publishing the page on Github Pages, then pri
 - The absolute path to the working directory was right before the command was run : /Users/yoshidanao
 - When I enter cd with no argument, it go back to the home environment, and  In my case, ~yoshidanao is the home environment. When I type cd, the status is already in home environment, so for our eyes, it does not do anything.
 - When I enter ls, ls is list command, so it display what folders/documents the yoshidanao folder has.
-![Image](WithNoArgument.png)
+![Image](UserYoshidanaoDocs.png)
 - 
 --------
    
