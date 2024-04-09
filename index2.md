@@ -2,6 +2,12 @@ Lab Report 1
 ========= 
 ***
 
+Name: Nao Yoshida
+PID:  A18083203
+Spring 2024 UCSD - CSE 15L
+
+***
+
 Instruction
 --------
 For each of the commands cd, ls, and cat, and using the workspace you created in this lab:
