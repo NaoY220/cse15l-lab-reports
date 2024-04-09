@@ -2,8 +2,8 @@ Lab Report 1
 ========= 
 ***
 
-Name: Nao Yoshida
-PID:  A18083203
+Name: Nao Yoshida |
+PID:  A18083203 |
 Spring 2024 UCSD - CSE 15L
 
 ***
@@ -26,4 +26,5 @@ So that's 9 total examples (3 for each command). For each of the 9 examples, inc
 You will upload your submission by publishing the page on Github Pages, then printing the page to PDF and uploading to the Lab Report 1 assignment on Gradescope.
 
 ***
+
 
