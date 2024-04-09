@@ -58,6 +58,7 @@ Note: we can see above picture that / contains Library, System, Users, and Appli
 - When I enter ls GitHub, I see the list of things contained in GitHub folder. Note that GitHub folder is inside the Documents folder.
 ![Image](GitHubList.png)
 - When I enter cat helloWorld.java that is inside the Documents, it displayed the entire code of this java file.
-
+![Image](DocumentsList.png)
+![Image](helloWorldCode.png)
 --------
 
