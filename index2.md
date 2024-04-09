@@ -56,6 +56,8 @@ Note: we can see above picture that / contains Library, System, Users, and Appli
 - The absolute path to the working directory was right before the command was run : /Users/yoshidanao/Documents
 - When I enter cd Documents, I see the change from ~yoshidanao to Documents yoshidanao. It means that Documents was set as working directory, and the absolute path I mentioned above is set by cd.
 - When I enter ls GitHub, I see the list of things contained in GitHub folder. Note that GitHub folder is inside the Documents folder.
-- When I enter cat helloWorld.java that is inside the Documents, it displayed the entire code of this java file. 
+![Image](GitHubList.png)
+- When I enter cat helloWorld.java that is inside the Documents, it displayed the entire code of this java file.
+
 --------
 
