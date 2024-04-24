@@ -62,7 +62,8 @@ You will upload your submission by publishing the page on Github Pages, then pri
         Discussion2.R           Music                   lecture1
 
 ![Image](UserYoshidanaoDocs2.png)
-Note: when I buy my laptop, I set Japanese language, so you will see Japanese, but these are the same folders and documents as what I got by ls command. Also, we can see the absolute path at the bottom of picture.
+Note: when I buy my laptop, I set Japanese language, so you will see Japanese, but these are the same folders and documents as what I got by `ls` command. Also, we can see the absolute path at the bottom of picture.
+
 - When I enter `cat`, it does not do anything because I need to put documents which contains some texts to print out using `cat`.
 
         yoshidanaonoMacBook-Pro:~ yoshidanao$ cat
@@ -168,12 +169,12 @@ The first 4 lines below are for setting up for doing task for this 3rd instructi
         yoshidanaonoMacBook-Pro:WhereAmI yoshidanao$ cd WhereAmI.java
         bash: cd: WhereAmI.java: Not a directory
 
-- When I enter 'ls WhereAmI.java', I see the list of things contained in GitHub folder. Note that GitHub folder is inside the 'Documents' folder.
+- When I enter `ls WhereAmI.java`, I see the list of things contained in GitHub folder. Note that GitHub folder is inside the 'Documents' folder.
 
         yoshidanaonoMacBook-Pro:WhereAmI yoshidanao$ ls WhereAmI.java
         WhereAmI.java
   
-- If I do not change the working directory from `~ yoshidanao` to `WhereAmI yoshidanao` and I use 'ls WhereAmI.java', error message will be displayed:
+- If I do not change the working directory from `~ yoshidanao` to `WhereAmI yoshidanao` and I use `ls WhereAmI.java`, error message will be displayed:
 
         yoshidanaonoMacBook-Pro:~ yoshidanao$ ls WhereAmI.java
         ls: WhereAmI.java: No such file or directory
