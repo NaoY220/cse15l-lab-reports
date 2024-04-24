@@ -35,7 +35,7 @@ the page should show
 
 (Some browsers might show this as How%20are%20you with a special character replacing the spaces; don't worry about fixing that for this example. If you want to look it up it has to do with URL encoding, a topic we won't address right now.) You can assume that the `s=` parameter always comes before the `user=` parameter, and they are always separated by a `&` as shown above.
 
-1. Show the code for your ChatServer, and two screenshots of using `/add-message`.
+1. Show the code for your `ChatServer`, and two screenshots of using `/add-message`.
 
 For each of the two screenshots, answer the followings three questions:
 2. Which methods in your code are called?
@@ -46,9 +46,9 @@ By values, we mean specific Strings, ints, URIs, and so on. "abc" is a value, 45
 
 --------
 
-<b>1. Show the code for your ChatServer, and two screenshots of using `/add-message`.</b>
+<b>1. Show the code for your `ChatServer`, and two screenshots of using `/add-message`.</b>
 
-My code for ChatServer: 
+My code for `ChatServer`: 
 
             import java.io.IOException;
             import java.net.URI;
@@ -172,7 +172,7 @@ However, as I mentioned, I could not figure out the way to display the previous 
                 }
             }
 
---> For the class ChatServer, there is `public static void main(String[] args) throws IOException` for getting the command-line in terminal. `String[] arg` receive the input in the terminal after the string `java ChatServer`. For example, I entered `java ChatServer 2040` in terminal, then `2040` will be passed into `args[0]`. There is `IOException check` if there is argument in terminal or not. If there is no command-line argument, it will display `error message`. Otherwise, the one argument which is number will be passed to the `port`. Then, the port and the new object `Handler` in `ChatServer.java` will be passed as parameter of `start()` method in `Server.java`.
+--> For the class 'ChatServer', there is `public static void main(String[] args) throws IOException` for getting the command-line in terminal. `String[] arg` receive the input in the terminal after the string `java ChatServer`. For example, I entered `java ChatServer 2040` in terminal, then `2040` will be passed into `args[0]`. There is `IOException check` if there is argument in terminal or not. If there is no command-line argument, it will display `error message`. Otherwise, the one argument which is number will be passed to the `port`. Then, the port and the new object `Handler` in `ChatServer.java` will be passed as parameter of `start()` method in `Server.java`.
             
             class ChatServer {
               public static void main(String[] args) throws IOException {
