@@ -101,14 +101,14 @@ Note: when I buy my laptop, I set Japanese language, so you will see Japanese, b
         yoshidanaonoMacBook-Pro:~ yoshidanao$ cat /
         cat: /: Is a directory
 
---> The absolute path to the working directory was right before the command was run : '/'
+--> The absolute path to the working directory was right before the command was run : `/`
 
-- When I enter 'cd /', I see the change from '~yoshidanao' to '/yoshidanao'. It means the working directory was set to root folder '/'.
+- When I enter `cd /`, I see the change from `~yoshidanao` to `/yoshidanao`. It means the working directory was set to root folder `/`.
 
         yoshidanaonoMacBook-Pro:~ yoshidanao$ cd /
         yoshidanaonoMacBook-Pro:/ yoshidanao$
   
-- When I enter 'ls /', it shows list under the root folder '/'. Also, entering `ls` after I set my working directry to root folder using 'cd /' also display the same result.
+- When I enter `ls /`, it shows list under the root folder `/`. Also, entering `ls` after I set my working directry to root folder using `cd /` also display the same result.
 
         yoshidanaonoMacBook-Pro:/ yoshidanao$ ls
         Applications    Users           cores           home            sbin            var
