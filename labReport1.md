@@ -43,7 +43,9 @@ You will upload your submission by publishing the page on Github Pages, then pri
 
         
 
-- The absolute path to the working directory was right before the command was run : `/Users/yoshidanao`. When I enter `cd` with no argument, it go back to the home environment, and  In my case, `~yoshidanao` represent the home environment(default working directory). When I type cd, the status is already in home environment, so for our eyes, it does not do anything.
+--> The absolute path to the working directory was right before the command was run : `/Users/yoshidanao`.
+
+- When I enter `cd` with no argument, it go back to the home environment, and  In my case, `~yoshidanao` represent the home environment(default working directory). When I type cd, the status is already in home environment, so for our eyes, it does not do anything.
 
         yoshidanaonoMacBook-Pro:~ yoshidanao$ cd
   
@@ -67,7 +69,7 @@ Note: when I buy my laptop, I set Japanese language, so you will see Japanese, b
         
         
 
-- Although `cat` does nothing, I do not see any error message in terminal. If I enter some text after that, `cat` will display the `String` I entered.
+- Although `cat` does nothing, I do not see any error message in terminal. If I enter some text after that, `cat` will display the `<String>` I entered.
 
         yoshidanaonoMacBook-Pro:~ yoshidanao$ cat
         
@@ -81,9 +83,25 @@ Note: when I buy my laptop, I set Japanese language, so you will see Japanese, b
 --------
    
 2. Share an example of using the command with a path to a directory as an argument.
-![Image](WithDirectory.png)
 
-- The absolute path to the working directory was right before the command was run : '/'
+        yoshidanaonoMacBook-Pro:~ yoshidanao$ cd /
+        yoshidanaonoMacBook-Pro:/ yoshidanao$ ls
+        Applications    Users           cores           home            sbin            var
+        Library         Volumes         dev             opt             tmp
+        System          bin             etc             private         usr
+        yoshidanaonoMacBook-Pro:/ yoshidanao$ ls /
+        Applications    Users           cores           home            sbin            var
+        Library         Volumes         dev             opt             tmp
+        System          bin             etc             private         usr
+        yoshidanaonoMacBook-Pro:/ yoshidanao$ cd
+        yoshidanaonoMacBook-Pro:~ yoshidanao$ ls /
+        Applications    Users           cores           home            sbin            var
+        Library         Volumes         dev             opt             tmp
+        System          bin             etc             private         usr
+        yoshidanaonoMacBook-Pro:~ yoshidanao$ cat /
+        cat: /: Is a directory
+
+--> The absolute path to the working directory was right before the command was run : '/'
 - When I enter 'cd /', I see the change from '~yoshidanao' to '/yoshidanao'. It means the working directory was set to root folder '/'.
 - When I enter 'ls /', it shows list under the root folder '/'.
 ![Image](rootFolderList.png)
