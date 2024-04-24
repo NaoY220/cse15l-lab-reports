@@ -267,7 +267,32 @@ After I log into account:
             [nayoshida@ieng6-201]:~:56$ ls /Users/yoshidanao/pass_id2.pub
             ls: cannot access /Users/yoshidanao/pass_id2.pub: No such file or directory
 
+--> I tried with `/Users/yoshidanao/.ssh/id_rsa`, but it shows me the same result as above. I think I did wrong and it is not the purpose of this instruction. 
 
+<b>3. A terminal interaction where you log into your ieng6 account without being asked for a password.</b>
+
+            yoshidanaonoMacBook-Pro:~ yoshidanao$ ssh nayoshida@ieng6.ucsd.edu
+            Enter passphrase for key '/Users/yoshidanao/.ssh/id_rsa': 
+            Last login: Wed Apr 24 02:21:19 2024 from 100.64.134.187
+            Hello nayoshida, you are currently logged into ieng6-201.ucsd.edu
+            
+            You are using 0% CPU on this system
+            
+            Cluster Status 
+            Hostname     Time    #Users  Load  Averages  
+            ieng6-201   02:25:01   4  0.01,  0.23,  0.36
+            ieng6-202   02:25:01   1  0.00,  0.03,  0.09
+            ieng6-203   02:25:01   4  1.00,  1.09,  1.20
+            
+             
+            
+            To begin work for one of your courses [ cs15lsp24 ], type its name 
+            at the command prompt.  (For example, "cs15lsp24", without the quotes).
+            
+            To see all available software packages, type "prep -l" at the command prompt,
+            or "prep -h" for more options.
+
+Note: before this lab, we had to enter the `UCSD account password` in order to log into `nayoshida@ieng6.ucsd.edu`. Now, I can log into this account with easier password or just click `enter`. 
 
 
 Part 3
