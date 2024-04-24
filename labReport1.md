@@ -183,6 +183,8 @@ I the first example I did with working directory `WhereAmI` work because it know
         yoshidanaonoMacBook-Pro:~ yoshidanao$ ls WhereAmI/WhereAmI.java
         WhereAmI/WhereAmI.java
 
+From this, we can know that ls can access the documents which are inside the currnt working directory. 
+
 - When I enter 'cat helloWorld.java' that is inside the Documents, it displayed the entire code of this java file.
 ![Image](DocumentsList.png)
 ![Image](helloWorldCode.png)
