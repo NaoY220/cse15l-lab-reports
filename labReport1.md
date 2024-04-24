@@ -197,6 +197,22 @@ From this, we can know that ls can access the documents which are inside the cur
                 }
         }
 
+As the same reason as `ls`, if working directory is `~`, `cat` cannot access to `WhereAmI.java` without specific or absolute path:
+
+        yoshidanaonoMacBook-Pro:~ yoshidanao$ cat WhereAmI.java
+        cat: WhereAmI.java: No such file or directory
+
+Fixed version:
+
+        yoshidanaonoMacBook-Pro:~ yoshidanao$ cat WhereAmI/WhereAmI.java
+        class WhereAmI {
+          public static void main(String[] args) {
+            System.out.println(System.getProperty("os.name"));
+            System.out.println(System.getProperty("user.name"));
+                  System.out.println(System.getProperty("user.home"));
+                  System.out.println(System.getProperty("user.dir"));
+                }
+        }
 
 ![Image](DocumentsList.png)
 ![Image](helloWorldCode.png)
