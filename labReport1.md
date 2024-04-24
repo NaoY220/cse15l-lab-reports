@@ -45,7 +45,7 @@ You will upload your submission by publishing the page on Github Pages, then pri
 
 --> The absolute path to the working directory was right before the command was run : `/Users/yoshidanao`.
 
-- When I enter `cd` with no argument, it go back to the home environment, and  In my case, `~yoshidanao` represent the home environment(default working directory). When I type cd, the status is already in home environment, so for our eyes, it does not do anything.
+- When I enter `cd` with no argument, it go back to the home environment, and  In my case, `~yoshidanao` represent the home environment(default working directory). When I type `cd`, the status is already in home environment, so for our eyes, it does not do anything.
 
         yoshidanaonoMacBook-Pro:~ yoshidanao$ cd
   
@@ -183,7 +183,7 @@ I the first example I did with working directory `WhereAmI` work because it know
         yoshidanaonoMacBook-Pro:~ yoshidanao$ ls WhereAmI/WhereAmI.java
         WhereAmI/WhereAmI.java
 
-From this, we can know that ls can access the documents which are inside the currnt working directory. 
+From this, we can know that `ls` can access the documents which are inside the currnt working directory. 
 
 - When I enter `cat WhereAmI.java` that is inside the Documents, it displayed the entire code of this java file.
 
