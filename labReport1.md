@@ -216,7 +216,7 @@ Fixed version with `WhereAmI/WhereAmI.java` instead of `WhereAmI.java`:
 
 Following is the screenshot of the inside of `WhereAmI` folder and we can see `WhereAmI.java`:
 
-![Image](WhereAmIPlace.png)
+![Image](WhereAmIFolder.png)
 
 
 Following is the screenshot of the content of `WhereAmI.java` which matches the output of `cat WhereAmI.java`:
