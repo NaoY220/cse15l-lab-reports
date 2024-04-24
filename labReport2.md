@@ -137,7 +137,7 @@ However, as I mentioned, I could not figure out the way to display the previous 
 
 <b>3. What are the relevant arguments to those methods, and the values of any relevant fields of the class?</b>
 
---> I will see one by one. For `class Handler`, it has method `handleRequest(URI url)`. This method receive the parameter URI 
+--> I will see one by one. For `class Handler`, it has method `handleRequest(URI url)`. This method receive the parameter `url` which is the object of `URI` is `URL identifer` and it is usable through URI library: `import java.net.URI;` which allow us to use several functions such that `getPath()` for getting the `path of URL` and `getQuery()` for finding the line after the `query ?` position. 
 
             class Handler implements URLHandler {
               public String handleRequest(URI url){
