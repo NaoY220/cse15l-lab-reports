@@ -202,7 +202,7 @@ As the same reason as `ls`, if working directory is `~`, `cat` cannot access to 
         yoshidanaonoMacBook-Pro:~ yoshidanao$ cat WhereAmI.java
         cat: WhereAmI.java: No such file or directory
 
-Fixed version:
+Fixed version with `WhereAmI/WhereAmI.java` instead of `WhereAmI.java`:
 
         yoshidanaonoMacBook-Pro:~ yoshidanao$ cat WhereAmI/WhereAmI.java
         class WhereAmI {
