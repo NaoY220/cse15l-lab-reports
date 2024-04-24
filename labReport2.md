@@ -113,9 +113,11 @@ My code for ChatServer:
 
 Note: I was struggled with how I can leave the previous data like `jpolitz: Hello` is also displayed after `/add-message?s=How are you&user=yash`. My idea in order to work as that way is using `txt file` to store the previous data added. 
 
-![Image] (Fiirstinput.png)
+First input: `http://localhost:2040/add-message?s=Which%20language%20have%20you%20learned&user=nayosh`
+![Image](Fiirstinput.png)
 
-![Image] (Secondinput.png)
+Second input: `http://localhost:2040/add-message?s=I%20have%20learned%20Java,%20C++,%20R%20etc...&user=anonymous`
+![Image](Secondinput.png)
 
    
 Part 2
