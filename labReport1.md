@@ -214,8 +214,8 @@ Fixed version with `WhereAmI/WhereAmI.java` instead of `WhereAmI.java`:
                 }
         }
 
-![Image](DocumentsList.png)
-![Image](helloWorldCode.png)
+![Image]()
+![Image]()
 
 
 --------
