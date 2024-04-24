@@ -185,7 +185,19 @@ I the first example I did with working directory `WhereAmI` work because it know
 
 From this, we can know that ls can access the documents which are inside the currnt working directory. 
 
-- When I enter 'cat helloWorld.java' that is inside the Documents, it displayed the entire code of this java file.
+- When I enter `cat WhereAmI.java` that is inside the Documents, it displayed the entire code of this java file.
+
+        yoshidanaonoMacBook-Pro:WhereAmI yoshidanao$ cat WhereAmI.java
+        class WhereAmI {
+          public static void main(String[] args) {
+            System.out.println(System.getProperty("os.name"));
+            System.out.println(System.getProperty("user.name"));
+                  System.out.println(System.getProperty("user.home"));
+                  System.out.println(System.getProperty("user.dir"));
+                }
+        }
+
+
 ![Image](DocumentsList.png)
 ![Image](helloWorldCode.png)
 
