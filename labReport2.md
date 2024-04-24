@@ -292,7 +292,9 @@ After I log into account:
             To see all available software packages, type "prep -l" at the command prompt,
             or "prep -h" for more options.
 
-Note: before this lab, we had to enter the `UCSD account password` in order to log into `nayoshida@ieng6.ucsd.edu`. Now, I can log into this account with easier password or just click `enter`. 
+Note: before this lab, we had to enter the `UCSD account password` in order to log into `nayoshida@ieng6.ucsd.edu`. Now, I can log into this account with easier password or just click `enter`. The following is the line for asking user to enter passphrase for key.
+
+            Enter passphrase for key '/Users/yoshidanao/.ssh/id_rsa':
 
 
 Part 3
