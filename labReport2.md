@@ -200,6 +200,75 @@ However, as I mentioned, I could not figure out the way to display the previous 
 Part 2
 --------
 
+Include a screenshot for each of the following:
+
+1. On the command line of your computer, run ls with the absolute path to the private key for your SSH key for logging into ieng6.
+2. On the command line of the ieng6 machine, run ls with the absolute path to the public key for your SSH key for logging into ieng6 (this is the one you copied to your account on ieng6 using ssh-copy-id, so it should be a path on ieng6's file system).
+3. A terminal interaction where you log into your ieng6 account without being asked for a password.
+
+--------
+
+<b>1. On the command line of your computer, run ls with the absolute path to the private key for your SSH key for logging into ieng6.</b>
+
+--> My absolute path to the private key is : `/Users/yoshidanao/passId`
+
+Terminal:
+
+            yoshidanaonoMacBook-Pro:~ yoshidanao$ ls /Users/yoshidanao/passId
+            /Users/yoshidanao/passId
+
+<b>2. On the command line of the ieng6 machine, run ls with the absolute path to the public key for your SSH key for logging into ieng6 (this is the one you copied to your account on ieng6 using ssh-copy-id, so it should be a path on ieng6's file system).</b>
+
+--> I could not access to the file and also I used `ls` to see what is happening and there are only three documents: `hello.txt  perl5  wavelet`. 
+
+Terminal:
+
+            [nayoshida@ieng6-201]:~:36$ ls /Users/yoshidanao/.ssh/passId.pub
+            ls: cannot access /Users/yoshidanao/.ssh/passId.pub: No such file or directory
+
+My try:
+
+            yoshidanaonoMacBook-Pro:~ yoshidanao$ ssh-keygen
+            Generating public/private rsa key pair.
+            Enter file in which to save the key (/Users/yoshidanao/.ssh/id_rsa): /Users/yoshidanao/pass_id2
+            Enter passphrase (empty for no passphrase): 
+            Enter same passphrase again: 
+            Your identification has been saved in /Users/yoshidanao/pass_id2
+            Your public key has been saved in /Users/yoshidanao/pass_id2.pub
+            The key fingerprint is:
+            SHA256:lMuaKR4ZbJzFag44qcqLjC4pTYs4Ar05G53aJiGO0bE yoshidanao@yoshidanaonoMacBook-Pro.local
+            The key's randomart image is:
+            +---[RSA 3072]----+
+            |                 |
+            |     .   .       |
+            |      o o        |
+            | o.o + o .       |
+            |+o.oO   S        |
+            |=.E* + +         |
+            |*B.=B +          |
+            |/.B=.o           |
+            |O*+=o            |
+            +----[SHA256]-----+
+            yoshidanaonoMacBook-Pro:~ yoshidanao$ ssh-copy-id -i /Users/yoshidanao/pass_id2 nayoshida@ieng6.ucsd.edu
+            /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/yoshidanao/pass_id2.pub"
+            /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+            /usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+            Enter passphrase for key '/Users/yoshidanao/.ssh/id_rsa': 
+            
+            Number of key(s) added:        1
+            
+            Now try logging into the machine, with:   "ssh 'nayoshida@ieng6.ucsd.edu'"
+            and check to make sure that only the key(s) you wanted were added.
+
+After I log into account:
+
+            [nayoshida@ieng6-201]:~:55$ ls
+            hello.txt  perl5  wavelet
+            [nayoshida@ieng6-201]:~:56$ ls /Users/yoshidanao/pass_id2.pub
+            ls: cannot access /Users/yoshidanao/pass_id2.pub: No such file or directory
+
+
+
 
 Part 3
 --------
