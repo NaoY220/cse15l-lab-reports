@@ -132,7 +132,49 @@ However, as I mentioned, I could not figure out the way to display the previous 
 
 <b>2. Which methods in your code are called?</b>
 
---> `handleRequest(URI url)` to see if the `query` and `parameter` is correctly implemented by user, and if the input(url with query and parameter) is correctly written out, then the web page show the parameter in the format: `<user>: <message>`. From my example, `http://localhost:2040/add-message?s=Which language have you learned&user=nayosh` has query `?` and parameter `s=Which language have you learned&user=nayosh`
+--> `handleRequest(URI url)` to see if the `query` and `parameter` is correctly implemented by user, and if the input(url with query and parameter) is correctly written out, then the web page show the parameter in the format: `<user>: <message>`. From my example, `http://localhost:2040/add-message?s=Which language have you learned&user=nayosh` has query is `?` and parameter(as one object) is `s=Which language have you learned&user=nayosh`. There are two parameters inside the big parameter: `s=<string>` and `user=<string>`.
+
+
+<b>3. What are the relevant arguments to those methods, and the values of any relevant fields of the class?</b>
+
+--> I will see one by one. For `class Handler`, it has method `handleRequest(URI url)`. This method receive the parameter URI 
+
+            class Handler implements URLHandler {
+              public String handleRequest(URI url){
+                    String username = "", message = "";
+                    //List<String> outputs;
+            
+                    if (url.getPath().equals("/")) {
+                    return "it is home page! to add message, use the format: /add-message?s=<string>&user=<string>";
+                    }
+                    else{
+                        if (url.getPath().equals("/add-message")) {
+                            //FileWriter addSentence = new FileWriter("Thread.txt");
+            
+                            String[] parameters = url.getQuery().split("&");
+                            if (parameters[0].substring(0,2).equals("s=")) {
+                                message = parameters[0].substring(2, parameters[0].length());
+                            }
+                            if (parameters.length==2 && parameters[1].substring(0,5).equals("user=")) {
+                                username = parameters[1].substring(5, parameters[1].length());
+                            }
+                            /*
+                            outputs = Files.readAllLines(Paths.get("Thread.txt"));
+                            addSentence.write(String.format("%s: %s\n", username, message));
+                            addSentence.close();
+                            */
+                            //return String.join("\n", outputs) + "\n" + String.format("%s: %s\n", username, message);
+            
+                            return String.format("%s: %s\n", username, message);
+                        }
+                        return "invalid path!";
+                    }
+                }
+            }
+
+
+<b>4. How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.</b>
+
 
    
 Part 2
