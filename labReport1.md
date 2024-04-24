@@ -214,7 +214,9 @@ Fixed version with `WhereAmI/WhereAmI.java` instead of `WhereAmI.java`:
                 }
         }
 
-![Image]()
+![Image](WhereAmIPlace.png)
+
+
 ![Image]()
 
 
