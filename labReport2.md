@@ -38,13 +38,15 @@ the page should show
 1. Show the code for your ChatServer, and two screenshots of using /add-message.
 
 For each of the two screenshots, answer the followings three questions:
-1. Which methods in your code are called?
-2. What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-3. How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+2. Which methods in your code are called?
+3. What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+4. How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
 
 By values, we mean specific Strings, ints, URIs, and so on. "abc" is a value, 456 is a value, new URI("http://...") is a value, and so on.)
 
 --------
+
+<b>1. Show the code for your ChatServer, and two screenshots of using /add-message.</b>
 
 My code for ChatServer: 
 
@@ -113,18 +115,24 @@ My code for ChatServer:
 
 Note: I was struggled with how I can leave the previous data like `jpolitz: Hello` is also displayed after `/add-message?s=How are you&user=yash`. My idea in order to work as that way is using `txt file` to store the previous data added. 
 
-<ins>First input</ins>: `http://localhost:2040/add-message?s=Which%20language%20have%20you%20learned&user=nayosh`
+<ins>First input</ins>: `http://localhost:2040/add-message?s=Which language have you learned&user=nayosh`
 
 ![Image](Fiirstinput.png)
 
-<ins>Second input</ins>: `http://localhost:2040/add-message?s=I%20have%20learned%20Java,%20C++,%20R%20etc...&user=anonymous`
+<ins>Second input</ins>: `http://localhost:2040/add-message?s=I have learned Java, C++, R etc...&user=anonymous`
 
 ![Image](Secondinput.png)
 
 The ideal output for Second one is 
+
             nayosh: Which language have you learned
             anonymous: I have learned Java, C++, R etc...
 
+However, as I mentioned, I could not figure out the way to display the previous output together. 
+
+<b>2. Which methods in your code are called?</b>
+
+--> `handleRequest(URI url)` to see if the `query` and `parameter` is correctly implemented by user, and if the input(url with query and parameter) is correctly written out, then the web page show the parameter in the format: `<user>: <message>`. From my example, `http://localhost:2040/add-message?s=Which language have you learned&user=nayosh` has query `?` and parameter `s=Which language have you learned&user=nayosh`
 
    
 Part 2
