@@ -306,4 +306,4 @@ For me, it was my first time using the `bash` terminal and using several command
 
 --------
 
-Completed: 23th, 2024  |  Lab due: 24th, 2024  |  GitHub link: 
+Completed: 23th, 2024  ----  Lab due: 24th, 2024  ----  GitHub link: https://github.com/NaoY220/cse15l-lab-reports.git
