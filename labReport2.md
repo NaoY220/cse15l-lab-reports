@@ -304,4 +304,6 @@ In 2-3 sentences, describe something you learned from lab in week 2 or 3 that yo
 
 For me, it was my first time using the `bash` terminal and using several commands other than command-line arguments, so everything was new to me! Also, it is the first time to create a `markdown file` in Github, so my first lab report was not fine work, but I started to figure out how we can do it. ssh and remote logging to the account sometimes confuse me, but I think I can get used to using it during this quarter.  
 
-Completed: th, 2024  |  Lab due: th, 2024  |  GitHub link: 
+--------
+
+Completed: 23th, 2024  |  Lab due: 24th, 2024  |  GitHub link: 
