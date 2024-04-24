@@ -132,7 +132,7 @@ However, as I mentioned, I could not figure out the way to display the previous 
 
 <b>2. Which methods in your code are called?</b>
 
---> `handleRequest(URI url)` to see if the `query` and `parameter` is correctly implemented by user, and if the input(url with query and parameter) is correctly written out, then the web page show the parameter in the format: `<user>: <message>`. From my example, `http://localhost:2040/add-message?s=Which language have you learned&user=nayosh` has query is `?` and parameter(as one object) is `s=Which language have you learned&user=nayosh`. There are two parameters inside the big parameter: `s=<string>` and `user=<string>`.
+--> `handleRequest(URI url)` to see if the `query` and `parameter` is correctly implemented by user, and if the input(url with query and parameter) is correctly written out, then the web page show the parameter in the format: `<user>: <message>`. From my example, `http://localhost:2040/add-message?s=Which language have you learned&user=nayosh` has query is `?` and parameter(as one object) is `s=Which language have you learned&user=nayosh`. There are two parameters inside the big parameter: `s=<string>` and `user=<string>`. Also, `Server.start(port, new Handler())` is also the method call in `ChatServer` class. It is for opening new server with the port number which user decided, and this task is done in `Server.java`.
 
 
 <b>3. What are the relevant arguments to those methods, and the values of any relevant fields of the class?</b>
@@ -172,7 +172,7 @@ However, as I mentioned, I could not figure out the way to display the previous 
                 }
             }
 
---> For the class ChatServer, there is `public static void main(String[] args) throws IOException` for getting the command-line in terminal. `String[] arg` receive the input in the terminal after the string `java ChatServer`. For example, I entered `java ChatServer 2040` in terminal, then `2040` will be passed into `args[0]`.
+--> For the class ChatServer, there is `public static void main(String[] args) throws IOException` for getting the command-line in terminal. `String[] arg` receive the input in the terminal after the string `java ChatServer`. For example, I entered `java ChatServer 2040` in terminal, then `2040` will be passed into `args[0]`. There is `IOException check` if there is argument in terminal or not. If there is no command-line argument, it will display `error message`. Otherwise, the one argument which is number will be passed to the `port`. Then, the port and the new object `Handler` in `ChatServer.java` will be passed as parameter of `start()` method in `Server.java`.
             
             class ChatServer {
               public static void main(String[] args) throws IOException {
@@ -193,6 +193,7 @@ However, as I mentioned, I could not figure out the way to display the previous 
             }
 
 <b>4. How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.</b>
+
 
 
    
