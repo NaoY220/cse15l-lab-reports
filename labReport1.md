@@ -82,7 +82,7 @@ Note: when I buy my laptop, I set Japanese language, so you will see Japanese, b
 
 --------
    
-2. Share an example of using the command with a path to a directory as an argument.
+<b>2. Share an example of using the command with a path to a directory as an argument.</b>
 
         yoshidanaonoMacBook-Pro:~ yoshidanao$ cd /
         yoshidanaonoMacBook-Pro:/ yoshidanao$ ls
@@ -139,7 +139,7 @@ Then I see the `cores`'s path at the bottom:
 
 --------
 
-3. Share an example of using the command with a path to a file as an argument.
+<b>3. Share an example of using the command with a path to a file as an argument.</b>
 
 The first 4 lines below are for setting up for doing task for this 3rd instruction:
 
@@ -223,6 +223,11 @@ Following is the screenshot of the content of `WhereAmI.java` which matches the 
 
 ![Image](WhereAmIContent.png)
 
+--------
+
+comments:
+
+I was confused what directory, path and file things are at the first week, but I started to understand what they are and the way to use these command through the practice of skill demos and classes I had so far. I am new to use Terminal because I started to use it since last qurter with `javac/java` command line. It is fun to know and to learn new things related to Terminal!
 
 --------
 
