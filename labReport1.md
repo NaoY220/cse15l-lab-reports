@@ -61,7 +61,7 @@ You will upload your submission by publishing the page on Github Pages, then pri
         Discussion1.R           Movies                  lab3                    練習.blend
         Discussion2.R           Music                   lecture1
 
-![Image](UserYoshidanaoDocs.png)
+![Image](UserYoshidanaoDocs2.png)
 Note: when I buy my laptop, I set Japanese language, so you will see Japanese, but these are the same folders and documents as what I got by ls command. Also, we can see the absolute path at the bottom of picture.
 - When I enter `cat`, it does not do anything because I need to put documents which contains some texts to print out using `cat`.
 
