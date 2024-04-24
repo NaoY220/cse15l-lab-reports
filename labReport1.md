@@ -30,12 +30,12 @@ You will upload your submission by publishing the page on Github Pages, then pri
 1. Example of using the command with no arguments.
 ![Image](WithNoArgument.png)
 
-- The absolute path to the working directory was right before the command was run : '/Users/yoshidanao'
-- When I enter 'cd' with no argument, it go back to the home environment, and  In my case, '~yoshidanao' represent the home environment(default working directory). When I type cd, the status is already in home environment, so for our eyes, it does not do anything.
-- When I enter 'ls', ls is list command, so it display what folders/documents the yoshidanao folder has.
+- The absolute path to the working directory was right before the command was run : `/Users/yoshidanao`
+- When I enter `cd` with no argument, it go back to the home environment, and  In my case, `~yoshidanao` represent the home environment(default working directory). When I type cd, the status is already in home environment, so for our eyes, it does not do anything.
+- When I enter `ls`, `ls` is `list command`, so it display what folders/documents the `yoshidanao` folder has.
 ![Image](UserYoshidanaoDocs.png)
 Note: when I buy my laptop, I set Japanese language, so you will see Japanese, but these are the same folders and documents as what I got by ls command. Also, we can see the absolute path at the bottom of picture.
-- When I enter 'cat', it does not do anything because I need to put documents which contains some texts to print out using cat. 
+- When I enter `cat`, it does not do anything because I need to put documents which contains some texts to print out using `cat`. Although `cat` does nothing, I do not see any error message in terminal. If I enter some text after that, `cat` will display the string I entered. 
 
 --------
    
@@ -47,7 +47,7 @@ Note: when I buy my laptop, I set Japanese language, so you will see Japanese, b
 - When I enter 'ls /', it shows list under the root folder '/'.
 ![Image](rootFolderList.png)
 Note: we can see above picture that '/' contains 'Library', 'System', 'Users', and 'Application'. I am not sure why there are less folders than the list displayed by 'ls'. I see Volumes folder contains root folder '/', so I think the folders I cannot see in the above picture contain root folder inside itself, and it prevent us seeing it. 
-- When I enter 'cat /', it displays error because '/' (argument) is a directory and it cannot process to print out. 
+- When I enter 'cat /', it displays error because '/' (argument) is a directory and it cannot process to print out. When I click enter, terminal do nothing because terminal thinks it is incompleting command and expect that user is trying to enter soemthing next. 
 --------
 
 3. Share an example of using the command with a path to a file as an argument.
