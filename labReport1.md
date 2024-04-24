@@ -168,8 +168,21 @@ The first 4 lines below are for setting up for doing task for this 3rd instructi
         yoshidanaonoMacBook-Pro:WhereAmI yoshidanao$ cd WhereAmI.java
         bash: cd: WhereAmI.java: Not a directory
 
-- When I enter 'ls GitHub', I see the list of things contained in GitHub folder. Note that GitHub folder is inside the 'Documents' folder.
-![Image](GitHubList.png)
+- When I enter 'ls WhereAmI.java', I see the list of things contained in GitHub folder. Note that GitHub folder is inside the 'Documents' folder.
+
+        yoshidanaonoMacBook-Pro:WhereAmI yoshidanao$ ls WhereAmI.java
+        WhereAmI.java
+  
+- If I do not change the working directory from `~ yoshidanao` to `WhereAmI yoshidanao` and I use 'ls WhereAmI.java', error message will be displayed:
+
+        yoshidanaonoMacBook-Pro:~ yoshidanao$ ls WhereAmI.java
+        ls: WhereAmI.java: No such file or directory
+
+I the first example I did with working directory `WhereAmI` work because it knows `WhereAmI` has `WhereAmI.java` and it is the very last document(`WhereAmI.java` is not a folder), so it displays `WhereAmI.java` and there is no more directory go over. For second example starting with working directory `~ yoshidanao`, it has no clue to know where it is. In other words, it cannot track the file without detailed path. If I do it with the detailed path(can be absolute), I get the same result as the first example, but displaying with tha path I entered:
+
+        yoshidanaonoMacBook-Pro:~ yoshidanao$ ls WhereAmI/WhereAmI.java
+        WhereAmI/WhereAmI.java
+
 - When I enter 'cat helloWorld.java' that is inside the Documents, it displayed the entire code of this java file.
 ![Image](DocumentsList.png)
 ![Image](helloWorldCode.png)
