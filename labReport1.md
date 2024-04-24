@@ -125,7 +125,8 @@ Note: when I buy my laptop, I set Japanese language, so you will see Japanese, b
         System          bin             etc             private         usr
 
 ![Image](rootFolderList.png)
-Note: we can see above picture that `/` contains `Library`, `System`, `Users`, and `Application`. I am not sure why there are less folders than the list displayed by `ls`. I see Volumes folder contains root folder `/`, so I think the folders I cannot see in the above picture contain root folder inside itself, and it prevent us seeing it. 
+Note: we can see above picture that `/` contains `Library`, `System`, `Users`, and `Application`. There are less folders than the list displayed by `ls` like that I see `Volumes` folder in the list of `/`, but not in my screenshot. However, I press `Command + Shift + G` in Finder on Mac to check if the list is correct by entering `/cores`.
+![Image]()
 
 - When I enter `cat /`, it displays error because `/` (argument) is a directory and it cannot process to print out. 
 
