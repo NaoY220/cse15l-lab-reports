@@ -161,8 +161,13 @@ The first 4 lines below are for setting up for doing task for this 3rd instructi
                 }
         }
 
-- The absolute path to the working directory was right before the command was run : '/Users/yoshidanao/Documents'
-- When I enter 'cd Documents', I see the change from '~yoshidanao' to 'Documents yoshidanao'. It means that 'Documents' was set as working directory, and the absolute path I mentioned above is set by 'cd'.
+--> The absolute path to the working directory was right before the command `cd` with file was run : `/Users/yoshidanao/WhereAmI`
+
+- When I enter `cd WhereAmI.java`, it displays the error message becuase `cd` command will only accept directory and the `WhereAmI.java` is not the such directory but java file.
+
+        yoshidanaonoMacBook-Pro:WhereAmI yoshidanao$ cd WhereAmI.java
+        bash: cd: WhereAmI.java: Not a directory
+
 - When I enter 'ls GitHub', I see the list of things contained in GitHub folder. Note that GitHub folder is inside the 'Documents' folder.
 ![Image](GitHubList.png)
 - When I enter 'cat helloWorld.java' that is inside the Documents, it displayed the entire code of this java file.
