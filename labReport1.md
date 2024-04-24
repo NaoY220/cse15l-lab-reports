@@ -69,7 +69,7 @@ Note: when I buy my laptop, I set Japanese language, so you will see Japanese, b
         
         
 
-- Although `cat` does nothing, I do not see any error message in terminal. If I enter some text after that, `cat` will display the `<String>` I entered.
+- Although `cat` does nothing, I do not see any error message in terminal. If I enter some text after that, `cat` will display the `<String>` I entered. According to professor's feedback, `cat` with no argument lead to infinite run, and it will read standard input and write out standard output. In order to leave the infinite run, we need to enter `control+c` (in Mac).
 
         yoshidanaonoMacBook-Pro:~ yoshidanao$ cat
         
@@ -134,6 +134,8 @@ Then I see the `cores`'s path at the bottom:
 
 - When I enter `cat /`, it displays error because `/` (argument) is a directory and it cannot process to print out. 
 
+        yoshidanaonoMacBook-Pro:~ yoshidanao$ cat /
+        cat: /: Is a directory
 
 --------
 
