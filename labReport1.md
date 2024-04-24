@@ -126,7 +126,11 @@ Note: when I buy my laptop, I set Japanese language, so you will see Japanese, b
 
 ![Image](rootFolderList.png)
 Note: we can see above picture that `/` contains `Library`, `System`, `Users`, and `Application`. There are less folders than the list displayed by `ls` like that I see `Volumes` folder in the list of `/`, but not in my screenshot. However, I press `Command + Shift + G` in Finder on Mac to check if the list is correct by entering `/cores`.
-![Image]()
+![Image](checkList)
+
+Then I see the `cores`'s path at the bottom:
+
+![Image](coresPath)
 
 - When I enter `cat /`, it displays error because `/` (argument) is a directory and it cannot process to print out. 
 
