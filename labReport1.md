@@ -27,15 +27,56 @@ You will upload your submission by publishing the page on Github Pages, then pri
 
 ***
 
-1. Example of using the command with no arguments.
-![Image](WithNoArgument.png)
+<b>1. Example of using the command with no arguments.</b>
 
-- The absolute path to the working directory was right before the command was run : `/Users/yoshidanao`
-- When I enter `cd` with no argument, it go back to the home environment, and  In my case, `~yoshidanao` represent the home environment(default working directory). When I type cd, the status is already in home environment, so for our eyes, it does not do anything.
+        yoshidanaonoMacBook-Pro:~ yoshidanao$ cd
+        yoshidanaonoMacBook-Pro:~ yoshidanao$ ls
+        :pass.txt               Discussion3.R           Pictures                mu_code
+        :pass.txt.pub           Discussion4.R           Public                  passId
+        Applications            Documents               WhereAmI                passId.pub
+        ChatServer              Downloads               eclipse                 pass_id2
+        Covid19Data             Homework1-7.R           eclipse-workspace       pass_id2.pub
+        Desktop                 Library                 hello.txt               wavelet
+        Discussion1.R           Movies                  lab3                    練習.blend
+        Discussion2.R           Music                   lecture1
+        yoshidanaonoMacBook-Pro:~ yoshidanao$ cat
+
+        
+
+- The absolute path to the working directory was right before the command was run : `/Users/yoshidanao`. When I enter `cd` with no argument, it go back to the home environment, and  In my case, `~yoshidanao` represent the home environment(default working directory). When I type cd, the status is already in home environment, so for our eyes, it does not do anything.
+
+        yoshidanaonoMacBook-Pro:~ yoshidanao$ cd
+  
 - When I enter `ls`, `ls` is `list command`, so it display what folders/documents the `yoshidanao` folder has.
+
+        yoshidanaonoMacBook-Pro:~ yoshidanao$ ls
+        :pass.txt               Discussion3.R           Pictures                mu_code
+        :pass.txt.pub           Discussion4.R           Public                  passId
+        Applications            Documents               WhereAmI                passId.pub
+        ChatServer              Downloads               eclipse                 pass_id2
+        Covid19Data             Homework1-7.R           eclipse-workspace       pass_id2.pub
+        Desktop                 Library                 hello.txt               wavelet
+        Discussion1.R           Movies                  lab3                    練習.blend
+        Discussion2.R           Music                   lecture1
+
 ![Image](UserYoshidanaoDocs.png)
 Note: when I buy my laptop, I set Japanese language, so you will see Japanese, but these are the same folders and documents as what I got by ls command. Also, we can see the absolute path at the bottom of picture.
-- When I enter `cat`, it does not do anything because I need to put documents which contains some texts to print out using `cat`. Although `cat` does nothing, I do not see any error message in terminal. If I enter some text after that, `cat` will display the string I entered. 
+- When I enter `cat`, it does not do anything because I need to put documents which contains some texts to print out using `cat`.
+
+        yoshidanaonoMacBook-Pro:~ yoshidanao$ cat
+        
+        
+
+- Although `cat` does nothing, I do not see any error message in terminal. If I enter some text after that, `cat` will display the `String` I entered.
+
+        yoshidanaonoMacBook-Pro:~ yoshidanao$ cat
+        
+        
+        Hello world
+        Hello world
+        hello.txt
+        hello.txt
+
 
 --------
    
