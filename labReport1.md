@@ -102,10 +102,31 @@ Note: when I buy my laptop, I set Japanese language, so you will see Japanese, b
         cat: /: Is a directory
 
 --> The absolute path to the working directory was right before the command was run : '/'
+
 - When I enter 'cd /', I see the change from '~yoshidanao' to '/yoshidanao'. It means the working directory was set to root folder '/'.
-- When I enter 'ls /', it shows list under the root folder '/'.
+
+        yoshidanaonoMacBook-Pro:~ yoshidanao$ cd /
+        yoshidanaonoMacBook-Pro:/ yoshidanao$
+  
+- When I enter 'ls /', it shows list under the root folder '/'. Also, entering `ls` after I set my working directry to root folder using 'cd /' also display the same result.
+
+        yoshidanaonoMacBook-Pro:/ yoshidanao$ ls
+        Applications    Users           cores           home            sbin            var
+        Library         Volumes         dev             opt             tmp
+        System          bin             etc             private         usr
+        yoshidanaonoMacBook-Pro:/ yoshidanao$ ls /
+        Applications    Users           cores           home            sbin            var
+        Library         Volumes         dev             opt             tmp
+        System          bin             etc             private         usr
+        yoshidanaonoMacBook-Pro:/ yoshidanao$ cd
+        yoshidanaonoMacBook-Pro:~ yoshidanao$ ls /
+        Applications    Users           cores           home            sbin            var
+        Library         Volumes         dev             opt             tmp
+        System          bin             etc             private         usr
+
 ![Image](rootFolderList.png)
-Note: we can see above picture that '/' contains 'Library', 'System', 'Users', and 'Application'. I am not sure why there are less folders than the list displayed by 'ls'. I see Volumes folder contains root folder '/', so I think the folders I cannot see in the above picture contain root folder inside itself, and it prevent us seeing it. 
+Note: we can see above picture that `/` contains `Library`, `System`, `Users`, and `Application`. I am not sure why there are less folders than the list displayed by `ls`. I see Volumes folder contains root folder `/`, so I think the folders I cannot see in the above picture contain root folder inside itself, and it prevent us seeing it. 
+
 - When I enter 'cat /', it displays error because '/' (argument) is a directory and it cannot process to print out. 
 
 
