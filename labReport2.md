@@ -137,7 +137,7 @@ However, as I mentioned, I could not figure out the way to display the previous 
 
 <b>3. What are the relevant arguments to those methods, and the values of any relevant fields of the class?</b>
 
---> I will see one by one. For `class Handler`, it has method `handleRequest(URI url)`. This method receive the parameter `url` which is the object of `URI` is `URL identifer` and it is usable through URI library: `import java.net.URI;` which allow us to use several functions such that `getPath()` for getting the `path of URL` and `getQuery()` for finding the line after the `query ?` position. 
+--> I will see one by one. For `class Handler`, it has method `handleRequest(URI url)`. This method receive the parameter `url` which is the object of `URI` is `URL identifer` and it is usable through URI library: `import java.net.URI;` which allow us to use several functions such that `getPath()` for getting the `path of URL` and `getQuery()` for finding the line after the `query ?` position. The value of `message` and `username` is `variable` to display in webpage, and each receive the data `<string>` from the URL parameter `s=<string>&user=<string>`.
 
             class Handler implements URLHandler {
               public String handleRequest(URI url){
@@ -194,7 +194,7 @@ However, as I mentioned, I could not figure out the way to display the previous 
 
 <b>4. How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.</b>
 
-
+--> The value will be changed from the specific request because user can modify `<string>` term in the URL parameter `s=<string>&user=<string>` if the he/she implement URL correcly like the order of path, query and parameter, and consider it is case sensitive. From my exmaple, variable `username` is changed from `nayosh` to `anonymous`, and `message` is changed to `Which language have you learned' to 'I have learned Java, C++, R etc...`. For `Server.start(port, new Handler())`, the value of `port` is also variable taken from user input in `terminal(command-line)`. If we put the value which is not number and non integer number, it will lead some error because there is code:  `Integer.parseInt()` that change "string integer number" to integer. Also, it has the range : `1024 to 49151`. If user satisfy that rule, he/she can change the port number as they like. 
 
    
 Part 2
