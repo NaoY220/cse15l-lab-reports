@@ -140,7 +140,26 @@ Then I see the `cores`'s path at the bottom:
 --------
 
 3. Share an example of using the command with a path to a file as an argument.
-![Image](WithFile.png)
+
+The first 4 lines below are for setting up for doing task for this 3rd instruction:
+
+        yoshidanaonoMacBook-Pro:wavelet yoshidanao$ cd
+        yoshidanaonoMacBook-Pro:~ yoshidanao$ cd WhereAmI 
+        yoshidanaonoMacBook-Pro:WhereAmI yoshidanao$ ls
+        WhereAmI.java
+        yoshidanaonoMacBook-Pro:WhereAmI yoshidanao$ cd WhereAmI.java
+        bash: cd: WhereAmI.java: Not a directory
+        yoshidanaonoMacBook-Pro:WhereAmI yoshidanao$ ls WhereAmI.java
+        WhereAmI.java
+        yoshidanaonoMacBook-Pro:WhereAmI yoshidanao$ cat WhereAmI.java
+        class WhereAmI {
+          public static void main(String[] args) {
+            System.out.println(System.getProperty("os.name"));
+            System.out.println(System.getProperty("user.name"));
+                  System.out.println(System.getProperty("user.home"));
+                  System.out.println(System.getProperty("user.dir"));
+                }
+        }
 
 - The absolute path to the working directory was right before the command was run : '/Users/yoshidanao/Documents'
 - When I enter 'cd Documents', I see the change from '~yoshidanao' to 'Documents yoshidanao'. It means that 'Documents' was set as working directory, and the absolute path I mentioned above is set by 'cd'.
