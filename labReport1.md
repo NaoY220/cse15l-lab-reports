@@ -132,7 +132,7 @@ Then I see the `cores`'s path at the bottom:
 
 ![Image](coresPath)
 
-- When I enter `cat /`, it displays error because `/` (argument) is a directory and it cannot process to print out. 
+- When I enter `cat /`,  `/` (argument) is a directory and folder, so `cat` will tell the fact that `/ is a directory` and tells indirectly that the `cat` do nothing work with folder/directory and have no content to display because it is not file such that `.java` or `.txt`.
 
         yoshidanaonoMacBook-Pro:~ yoshidanao$ cat /
         cat: /: Is a directory
