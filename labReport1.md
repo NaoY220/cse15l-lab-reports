@@ -220,5 +220,5 @@ Fixed version with `WhereAmI/WhereAmI.java` instead of `WhereAmI.java`:
 
 --------
 
-Completed: April 8th, 2024 | Lab due: April 9th, 2024 | GitHub link: https://naoy220.github.io/cse15l-lab-reports/labReport1.html
+Completed: April 24th, 2024 | Resubmit Lab due: April 24th, 2024 | GitHub link: https://naoy220.github.io/cse15l-lab-reports/labReport1.html
 
