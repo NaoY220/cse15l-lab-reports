@@ -121,6 +121,11 @@ Note: I was struggled with how I can leave the previous data like `jpolitz: Hell
 
 ![Image](Secondinput.png)
 
+The ideal output for Second one is 
+            nayosh: Which language have you learned
+            anonymous: I have learned Java, C++, R etc...
+
+
    
 Part 2
 --------
