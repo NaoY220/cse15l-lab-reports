@@ -33,9 +33,9 @@ the page should show
       jpolitz: Hello 
       yash: How are you
 
-(Some browsers might show this as How%20are%20you with a special character replacing the spaces; don't worry about fixing that for this example. If you want to look it up it has to do with URL encoding, a topic we won't address right now.) You can assume that the s= parameter always comes before the user= parameter, and they are always separated by a & as shown above.
+(Some browsers might show this as How%20are%20you with a special character replacing the spaces; don't worry about fixing that for this example. If you want to look it up it has to do with URL encoding, a topic we won't address right now.) You can assume that the `s=` parameter always comes before the `user=` parameter, and they are always separated by a `&` as shown above.
 
-1. Show the code for your ChatServer, and two screenshots of using /add-message.
+1. Show the code for your ChatServer, and two screenshots of using `/add-message`.
 
 For each of the two screenshots, answer the followings three questions:
 2. Which methods in your code are called?
@@ -46,7 +46,7 @@ By values, we mean specific Strings, ints, URIs, and so on. "abc" is a value, 45
 
 --------
 
-<b>1. Show the code for your ChatServer, and two screenshots of using /add-message.</b>
+<b>1. Show the code for your ChatServer, and two screenshots of using `/add-message`.</b>
 
 My code for ChatServer: 
 
@@ -202,13 +202,13 @@ Part 2
 
 Include a screenshot for each of the following:
 
-1. On the command line of your computer, run ls with the absolute path to the private key for your SSH key for logging into ieng6.
-2. On the command line of the ieng6 machine, run ls with the absolute path to the public key for your SSH key for logging into ieng6 (this is the one you copied to your account on ieng6 using ssh-copy-id, so it should be a path on ieng6's file system).
-3. A terminal interaction where you log into your ieng6 account without being asked for a password.
+1. On the command line of your computer, run `ls` with the absolute path to the private key for your SSH key for logging into `ieng6`.
+2. On the command line of the `ieng6` machine, run `ls` with the absolute path to the public key for your SSH key for logging into `ieng6` (this is the one you copied to your account on `ieng6` using `ssh-copy-id`, so it should be a path on ieng6's file system).
+3. A terminal interaction where you log into your `ieng6` account without being asked for a password.
 
 --------
 
-<b>1. On the command line of your computer, run ls with the absolute path to the private key for your SSH key for logging into ieng6.</b>
+<b>1. On the command line of your computer, run `ls` with the absolute path to the private key for your SSH key for logging into `ieng6`.</b>
 
 --> My absolute path to the private key is : `/Users/yoshidanao/passId`
 
@@ -217,7 +217,7 @@ Terminal:
             yoshidanaonoMacBook-Pro:~ yoshidanao$ ls /Users/yoshidanao/passId
             /Users/yoshidanao/passId
 
-<b>2. On the command line of the ieng6 machine, run ls with the absolute path to the public key for your SSH key for logging into ieng6 (this is the one you copied to your account on ieng6 using ssh-copy-id, so it should be a path on ieng6's file system).</b>
+<b>2. On the command line of the `ieng6` machine, run `ls` with the absolute path to the public key for your SSH key for logging into `ieng6` (this is the one you copied to your account on ieng6 using `ssh-copy-id`, so it should be a path on ieng6's file system).</b>
 
 --> I could not access to the file and also I used `ls` to see what is happening and there are only three documents: `hello.txt  perl5  wavelet`. 
 
@@ -269,7 +269,7 @@ After I log into account:
 
 --> I tried with `/Users/yoshidanao/.ssh/id_rsa`, but it shows me the same result as above. I think I did wrong and it is not the purpose of this instruction. 
 
-<b>3. A terminal interaction where you log into your ieng6 account without being asked for a password.</b>
+<b>3. A terminal interaction where you log into your `ieng6` account without being asked for a password.</b>
 
             yoshidanaonoMacBook-Pro:~ yoshidanao$ ssh nayoshida@ieng6.ucsd.edu
             Enter passphrase for key '/Users/yoshidanao/.ssh/id_rsa': 
