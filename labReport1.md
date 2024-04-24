@@ -226,5 +226,9 @@ Following is the screenshot of the content of `WhereAmI.java` which matches the 
 
 --------
 
-Completed: April 24th, 2024 -- Resubmit Lab due: April 24th, 2024 -- GitHub link: https://naoy220.github.io/cse15l-lab-reports/labReport1.html
+Completed: April 24th, 2024
+
+Resubmit Lab due: April 24th, 2024
+
+GitHub link: https://naoy220.github.io/cse15l-lab-reports/labReport1.html
 
