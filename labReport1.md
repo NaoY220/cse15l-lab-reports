@@ -127,7 +127,7 @@ Note: when I buy my laptop, I set Japanese language, so you will see Japanese, b
 ![Image](rootFolderList.png)
 Note: we can see above picture that `/` contains `Library`, `System`, `Users`, and `Application`. I am not sure why there are less folders than the list displayed by `ls`. I see Volumes folder contains root folder `/`, so I think the folders I cannot see in the above picture contain root folder inside itself, and it prevent us seeing it. 
 
-- When I enter 'cat /', it displays error because '/' (argument) is a directory and it cannot process to print out. 
+- When I enter `cat /`, it displays error because `/` (argument) is a directory and it cannot process to print out. 
 
 
 --------
