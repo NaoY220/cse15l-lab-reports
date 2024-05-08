@@ -1,4 +1,4 @@
-Lab Report #
+Lab Report 3
 ========= 
 ***
 
