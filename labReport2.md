@@ -268,8 +268,8 @@ For me, it was my first time using the `bash` terminal and using several command
 
 --------
 
-Completed: 23th, 2024
+Completed: May 6th, 2024
 
-Lab due: 24th, 2024
+Lab due: May 8th, 2024
 
 GitHub link: [https://github.com/NaoY220/cse15l-lab-reports.git](https://naoy220.github.io/cse15l-lab-reports/labReport2.html)
