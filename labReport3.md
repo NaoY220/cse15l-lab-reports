@@ -23,14 +23,17 @@ Provide:
 
 ***
 
-The bugs which I choosed from week 4's lab : `ListExamples.java`
+The bugs which I choosed from week 4's lab : `reversed()` function from `ArrayExamples.java`
 
 <b>1.  A failure-inducing input for the buggy program, as a **JUnit test** and any associated code (write it as a code block in Markdown).</b>
 
 
-a) Case1: no command-line argument
-
-
+         // reversed() : 
+         @Test
+         public void testReversedMyExample() {
+            int[] input1 = {-1, 3, 5, 0};
+            assertArrayEquals(new int[]{0, 5, 3, -1}, ArrayExamples.reversed(input1));
+         }
 
 --------
    
