@@ -179,7 +179,7 @@ First setup for doing this task:
 
 Note that I saved all contents of both txt files and directories inside `./technical` into `labrep3.txt`.
 
-1. `-e` : It will help us to specify several pattern to search the document if it contains at least one of patterns specified. 
+<b>1. `-e` : It will help us to specify several pattern to search the document if it contains at least one of patterns specified. </b>
 
 First example with files:
 
@@ -314,24 +314,30 @@ If I tried to use `grep -e` command for directory, terminal indicates that this 
         technical/biomed/1472-6904-2-5.txt:          of Takahashi et. al [ 25 ] in which the oral absorption
         ...(I just cut because it is too long)
 
-???
+This command `-e` (also `-re`) is useful because it often make our life easier to find the file which we are looking for such that client information and some information related to the certain objects or research. For example, I can enter :
+
+`grep -e "nao" -e "yoshida" -e "nayoshida" UCSDStudentsData.txt` 
+
+to find my data from millions of datas in UCSD student data.
 
 
-2. `-v`
+<b>2. `-v` : It will selects lines that do not match the <string> used for search.</b>
 
-3. `-c`
+<b>3. `-c` : </b>
 
-4. `-n`
+<b>4. `-n` : </b>
 
-5. `-l/-L`
+<b>5. `-l/-L` : </b>
    
-6. `-m`, --max-count=NUM
+<b>6. `-m`, `--max-count=NUM` : </b>
    
-7.  `--color=always`
+<b>7.  `--color=always` : </b>
 
-8.  `^` (I do not see it in chatGPT, but I think it is useful when I saw how it work in the class, so I explore with it)
+The two commands following was not produced in chatGPT, but I think it is useful when I saw how it work in the class, so I explore with it
 
-9.  `–f` (I do not see it in chatGPT, but I think it is useful when I saw how it work in the class, so I explore with it)
+<b> 8.  `^` : </b>
+
+<b>9.  `–f` : </b>
 
 
 --------
