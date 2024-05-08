@@ -158,6 +158,12 @@ Along with each option/mode you show, **cite your source** for how you found out
 
 ***
 
+I used ChatGPT to see what kind of command that I can use with `grep`, and I got as the following:
+
+![Image](chatGPT.cite1.png)
+
+![Image](chatGPT.cite2.png)
+
 
 
 --------
