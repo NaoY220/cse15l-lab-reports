@@ -183,7 +183,56 @@ Note that I saved all contents of both txt files and directories inside `./techn
 
 First example:
 
-        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -e "ti" -e "null" labrep3.txt
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -e "ti" -e "hi" labrep3.txt                          
+        ./technical/government/About_LSC/diversity_priorities.txt
+        ./technical/government/About_LSC/reporting_system.txt
+        ./technical/government/About_LSC/conference_highlights.txt
+        ./technical/government/Env_Prot_Agen/multi102902.txt
+        ./technical/government/Env_Prot_Agen/section-by-section_summary.txt
+        ./technical/government/Env_Prot_Agen/tech_sectiong.txt
+        ./technical/government/Gen_Account_Office/Testimony_cg00010t.txt
+        ./technical/government/Gen_Account_Office/GovernmentAuditingStandards_yb2002ed.txt
+        ./technical/government/Gen_Account_Office/Testimony_Jul15-2002_d02940t.txt
+        ./technical/government/Gen_Account_Office/Testimony_d01609t.txt
+        ./technical/government/Gen_Account_Office/Testimony_Jul17-2002_d02957t.txt
+        ./technical/government/Post_Rate_Comm/Cohenetal_Cost_Function.txt
+        ./technical/government/Media/balance_scales_of_justice.txt
+        ./technical/government/Media/Legal-aid_chief.txt
+        ./technical/government/Media/Targeting_Domestic_Violence.txt
+        ./technical/government/Media/highlight_Senior_Day.txt
+        ./technical/government/Media/Supporting_Legal_Center.txt
+        ./technical/government/Media/Domestic_Violence_Ruling.txt
+        ./technical/government/Media/Abuse_penalties.txt
+        ./technical/government/Media/Justice_for_all.txt
+        ./technical/government/Media/Philly_Lawyers.txt
+        ./technical/government/Media/Eviction_law.txt
+        ./technical/government/Media/Higher_Registration_Fees.txt
+        ./technical/government/Media/Fire_Victims_Sue.txt
+        ./technical/government/Media/Justice_requests.txt
+        ./technical/government/Media/Low-income_children.txt
+        ./technical/government/Media/man_on_national_team.txt
+        ./technical/government/Media/Attorney_gives_his_time.txt
+        ./technical/government/Media/All_May_Have_Justice.txt
+        ./technical/government/Media/Domestic_violence_aid.txt
+        ./technical/government/Media/fight_domestic_abuse.txt
+        ./technical/government/Media/CommercialAppealMemphis2.txt
+        ./technical/government/Media/The_Bend_Bulletin.txt
+        ./technical/government/Media/Entities_Merge.txt
+        ./technical/government/Media/Politician_Practices.txt
+        ./technical/government/Media/Retirement_Has_Its_Appeal.txt
+
+To see if the file really contain either `"ti"`, `"hi"`, or both, I use `grep "hi" labrep3.txt` and `grep "ti" labrep3.txt`:
+
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep "hi" labrep3.txt 
+        ./technical/government/About_LSC/conference_highlights.txt
+        ./technical/government/Media/Legal-aid_chief.txt
+        ./technical/government/Media/highlight_Senior_Day.txt
+        ./technical/government/Media/Philly_Lawyers.txt
+        ./technical/government/Media/Low-income_children.txt
+        ./technical/government/Media/Attorney_gives_his_time.txt
+        ./technical/government/Media/CommercialAppealMemphis2.txt
+        
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep "ti" labrep3.txt
         ./technical/government/About_LSC/diversity_priorities.txt
         ./technical/government/About_LSC/reporting_system.txt
         ./technical/government/Env_Prot_Agen/multi102902.txt
@@ -214,8 +263,9 @@ First example:
         ./technical/government/Media/Entities_Merge.txt
         ./technical/government/Media/Politician_Practices.txt
         ./technical/government/Media/Retirement_Has_Its_Appeal.txt
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % 
 
-
+From the above, we can see that `./technical/government/Media/Attorney_gives_his_time.txt` appear in both of the result of each command, so it has both `"ti"` and `"hi"`. Also, it is case-sensitive. 
 
 2. `-v`
 
