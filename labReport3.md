@@ -272,13 +272,6 @@ Another example with directories:
         yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -e "ti" -e "hi" technical/biomed 
         grep: technical/biomed: Is a directory
 
-
-
-
-
-
-        
-
 If I tried to use `grep -e` command for directory, terminal indicates that this command does not interact with directory. However, `-e` can work with directory if we use other command like `-re` for finding the patterns in multiple files across multiple directories.
 
         yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -re "hi " -e "gone"  technical/biomed 
@@ -320,6 +313,9 @@ If I tried to use `grep -e` command for directory, terminal indicates that this 
         technical/biomed/1472-6904-2-5.txt:          measurements of Takahashi et. al. [ 25 ] of the plasma
         technical/biomed/1472-6904-2-5.txt:          of Takahashi et. al [ 25 ] in which the oral absorption
         ...(I just cut because it is too long)
+
+???
+
 
 2. `-v`
 
