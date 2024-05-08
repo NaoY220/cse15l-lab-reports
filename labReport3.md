@@ -36,14 +36,16 @@ The bugs which I choosed from week 4's lab : `reversed()` function from `ArrayEx
 
 <b>1.  A failure-inducing input for the buggy program, as a **JUnit test** and any associated code (write it as a code block in Markdown).</b>
 
-        // reversed() : 
+JUnit test code:
+
+        // reversed()
         @Test
         public void testReversedMyExample() {
             int[] input1 = {-1, 3, 5, 0};
         assertArrayEquals(new int[]{0, 5, 3, -1}, ArrayExamples.reversed(input1));
         }
 
-Note that this returns "failure due not to match expected and actual outputs:
+Note that this returns `failure` due not to match expected and actual outputs:
 
         yoshidanao@yoshidanaonoMacBook-Pro lab3 % javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
         yoshidanao@yoshidanaonoMacBook-Pro lab3 % java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ArrayTests
@@ -78,7 +80,15 @@ We see that the error is found in `element [1]` of array that contains actual va
    
 <b>2. An input that doesn't induce a failure, as a **JUnit test** and any associated code (write it as a code block in Markdown).</b>
 
+JUnit test code:
 
+        @Test
+        public void testReversedMyExample2() {
+           int[] input1 = {0,0,0};
+        assertArrayEquals(new int[]{0,0,0}, ArrayExamples.reversed(input1));
+        }
+
+The result of processing this test:
 
         yoshidanao@yoshidanaonoMacBook-Pro lab3 % javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
         yoshidanao@yoshidanaonoMacBook-Pro lab3 % java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ArrayTests
@@ -88,9 +98,13 @@ We see that the error is found in `element [1]` of array that contains actual va
         
         OK (1 test)
 
+Note that there is no error because the expected and actual values matched.
+
 --------
    
 <b>3. The symptom, as the output of running the two tests above (provide it as a **screenshot** -- one test should pass, one test should fail).</b>
+
+
 
 --------
    
