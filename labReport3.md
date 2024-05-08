@@ -323,21 +323,39 @@ to find my data from millions of datas in UCSD student data.
 
 <b>2. `-v` : It will selects lines that do not match the <string> used for search.</b>
 
+First example with files:
+
+Another example with directories:
+
 <b>3. `-c` : </b>
 
-<b>4. `-n` : </b>
+First example with files:
 
-<b>5. `-l/-L` : </b>
-   
-<b>6. `-m`, `--max-count=NUM` : </b>
-   
-<b>7.  `--color=always` : </b>
+Another example with directories:
 
-The two commands following was not produced in chatGPT, but I think it is useful when I saw how it work in the class, so I explore with it
+<b>4. `-l/-L` : </b>
 
-<b> 8.  `^` : </b>
+First example with files:
 
-<b>9.  `–f` : </b>
+Another example with directories:
+
+<b>5. `-m`, `--max-count=NUM` : </b>
+
+First example with files:
+
+Another example with directories:
+
+<b>6.  `--color=always` : </b>
+
+First example with files:
+
+Another example with directories:
+
+**The two commands following was not produced in chatGPT, but I think it is useful when I saw how it work in the class, so I explore with it**
+
+<b>7.  `^` : </b>
+
+<b>8.  `–f` : </b>
 
 
 --------
