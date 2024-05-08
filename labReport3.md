@@ -158,7 +158,8 @@ Along with each option/mode you show, **cite your source** for how you found out
 
 ***
 
-3. 
+
+
 --------
 
 Completed: th, 2024  
