@@ -112,6 +112,26 @@ Note that we will know it processed two tests out and found 1 failure : `Tests r
    
 <b>4. The bug, as the before-and-after code change required to fix it (as two **code blocks** in Markdown).</b>
 
+Code before fixed:
+
+        static int[] reversed(int[] arr) {
+           int[] newArray = new int[arr.length];
+           for(int i = 0; i < arr.length; i += 1) {
+           arr[i] = newArray[arr.length - i - 1];
+           }
+           return arr;
+        }
+
+Code after fixed:
+
+        static int[] reversed(int[] arr) {
+            int[] newArray = new int[arr.length];
+            for(int i = 0; i < arr.length; i += 1) {
+               newArray[i] = arr[arr.length - i - 1];
+            }
+            return newArray;
+        }
+
 --------
    
 <b>5. Briefly describe (2-3 sentences) why the fix addresses the issue.</b>
