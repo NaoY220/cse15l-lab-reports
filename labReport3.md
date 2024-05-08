@@ -25,52 +25,52 @@ Provide:
 
 The bugs which I choosed from week 4's lab : `reversed()` function from `ArrayExamples.java`
 
-                  // Returns a *new* array with all the elements of the input array in reversed order
-                  static int[] reversed(int[] arr) {
-                      int[] newArray = new int[arr.length];
-                      for(int i = 0; i < arr.length; i += 1) {
-                           arr[i] = newArray[arr.length - i - 1];
-                      }
-                      return arr;
-                    }
+        // Returns a *new* array with all the elements of the input array in reversed order
+        static int[] reversed(int[] arr) {
+              int[] newArray = new int[arr.length];
+              for(int i = 0; i < arr.length; i += 1) {
+                    arr[i] = newArray[arr.length - i - 1];
+              }
+              return arr;
+        }
 
 <b>1.  A failure-inducing input for the buggy program, as a **JUnit test** and any associated code (write it as a code block in Markdown).</b>
 
-                  // reversed() : 
-                  @Test
-                  public void testReversedMyExample() {
-                     int[] input1 = {-1, 3, 5, 0};
-                     assertArrayEquals(new int[]{0, 5, 3, -1}, ArrayExamples.reversed(input1));
-                  }
+        // reversed() : 
+        @Test
+        public void testReversedMyExample() {
+            int[] input1 = {-1, 3, 5, 0};
+        assertArrayEquals(new int[]{0, 5, 3, -1}, ArrayExamples.reversed(input1));
+        }
 
 Note that this returns "failure due not to match expected and actual outputs:
 
-                  yoshidanao@yoshidanaonoMacBook-Pro lab3 % javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
-                  yoshidanao@yoshidanaonoMacBook-Pro lab3 % java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ArrayTests
-                  JUnit version 4.13.2
-                  .E
-                  Time: 0.004
-                  There was 1 failure:
-                  1) testReversedMyExample(ArrayTests)
-                  arrays first differed at element [1]; expected:<5> but was:<0>
-                          at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)
-                          at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)
-                          at org.junit.Assert.internalArrayEquals(Assert.java:534)
-                          at org.junit.Assert.assertArrayEquals(Assert.java:418)
-                          at org.junit.Assert.assertArrayEquals(Assert.java:429)
-                          at ArrayTests.testReversedMyExample(ArrayTests.java:32)
-                          ... 30 trimmed
-                  Caused by: java.lang.AssertionError: expected:<5> but was:<0>
-                          at org.junit.Assert.fail(Assert.java:89)
-                          at org.junit.Assert.failNotEquals(Assert.java:835)
-                          at org.junit.Assert.assertEquals(Assert.java:120)
-                          at org.junit.Assert.assertEquals(Assert.java:146)
-                          at org.junit.internal.ExactComparisonCriteria.assertElementsEqual(ExactComparisonCriteria.java:8)
-                          at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)
-                          ... 36 more
+        yoshidanao@yoshidanaonoMacBook-Pro lab3 % javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+        yoshidanao@yoshidanaonoMacBook-Pro lab3 % java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ArrayTests
+        JUnit version 4.13.2
+        .E
+        Time: 0.004
+        There was 1 failure:
+            1) testReversedMyExample(ArrayTests)
+            arrays first differed at element [1]; expected:<5> but was:<0>
+                    at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)
+                    at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)
+                    at org.junit.Assert.internalArrayEquals(Assert.java:534)
+                    at org.junit.Assert.assertArrayEquals(Assert.java:418)
+                    at org.junit.Assert.assertArrayEquals(Assert.java:429)
+                    at ArrayTests.testReversedMyExample(ArrayTests.java:32)
+                    ... 30 trimmed
+            Caused by: java.lang.AssertionError: expected:<5> but was:<0
+                    at org.junit.Assert.fail(Assert.java:89)
+                    at org.junit.Assert.failNotEquals(Assert.java:835)
+                    at org.junit.Assert.assertEquals(Assert.java:120)
+                    at org.junit.Assert.assertEquals(Assert.java:146)
+                    at org.junit.internal.ExactComparisonCriteria.assertElementsEqual(ExactComparisonCriteria.java:8)
+                    at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)
+                    ... 36 more
                   
-                  FAILURES!!!
-                  Tests run: 1,  Failures: 1
+        FAILURES!!!
+        Tests run: 1,  Failures: 1
 
 We see that the error is found in `element [1]` of array that contains actual value `0`, not expected `5`. It happens because there is an error in the `reversed()` function in `ArrayExamples.java` and `ArrayExamples.reversed(input1)` results in `{0,0,0,0}` instead of `{0, 5, 3, -1}`. The reason why we do not see no more explanation of error we face other than `expected:<5> but was:<0>` is because it stop running immediately when the program find out there is error(exception). 
 
@@ -79,6 +79,14 @@ We see that the error is found in `element [1]` of array that contains actual va
 <b>2. An input that doesn't induce a failure, as a **JUnit test** and any associated code (write it as a code block in Markdown).</b>
 
 
+
+        yoshidanao@yoshidanaonoMacBook-Pro lab3 % javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+        yoshidanao@yoshidanaonoMacBook-Pro lab3 % java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ArrayTests
+        JUnit version 4.13.2
+        .
+        Time: 0.003
+        
+        OK (1 test)
 
 --------
    
