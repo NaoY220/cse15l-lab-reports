@@ -72,11 +72,13 @@ Note that this returns "failure due not to match expected and actual outputs:
                   FAILURES!!!
                   Tests run: 1,  Failures: 1
 
-We see that the error is found in element [1] of array that contains actual value 0, not expected 5. It happens because there is an error in the `reversed()` function in `ArrayExamples.java` and `ArrayExamples.reversed(input1)` results in `{0,0,0,0}` instead of `{0, 5, 3, -1}`. The reason why we do not see no more explanation of error we face other than `expected:<5> but was:<0>` is because it stop running immediately when the program find out there is error(exception). 
+We see that the error is found in `element [1]` of array that contains actual value `0`, not expected `5`. It happens because there is an error in the `reversed()` function in `ArrayExamples.java` and `ArrayExamples.reversed(input1)` results in `{0,0,0,0}` instead of `{0, 5, 3, -1}`. The reason why we do not see no more explanation of error we face other than `expected:<5> but was:<0>` is because it stop running immediately when the program find out there is error(exception). 
 
 --------
    
 <b>2. An input that doesn't induce a failure, as a **JUnit test** and any associated code (write it as a code block in Markdown).</b>
+
+
 
 --------
    
