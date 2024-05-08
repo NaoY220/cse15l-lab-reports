@@ -194,7 +194,7 @@ Include a screenshot for each of the following:
 
 <b>1. On the command line of your computer, run `ls` with the absolute path to the private key for your SSH key for logging into `ieng6`.</b>
 
---> My absolute path to the private key is : `/Users/yoshidanao/passId`
+--> My absolute path to the private key is : `~/.ssh/`
 
 Terminal:
 
@@ -203,13 +203,16 @@ Terminal:
 
 <b>2. On the command line of the `ieng6` machine, run `ls` with the absolute path to the public key for your SSH key for logging into `ieng6` (this is the one you copied to your account on ieng6 using `ssh-copy-id`, so it should be a path on ieng6's file system).</b>
 
---> I could not access to the file and also I used `ls` to see what is happening and there are only three documents: `hello.txt  perl5  wavelet`. 
+--> My absolute path to the public key is: ~/.ssh
 
 Terminal:
 
-            [nayoshida@ieng6-201]:~:36$ ls /Users/yoshidanao/.ssh/passId.pub
-            ls: cannot access /Users/yoshidanao/.ssh/passId.pub: No such file or directory
-
+            [nayoshida@ieng6-202]:~:117$ cd .ssh
+            [nayoshida@ieng6-202]:.ssh:118$ ls
+            authorized_keys
+            [nayoshida@ieng6-202]:.ssh:120$ ls /Users/yoshidanao/.ssh/id_rsa.pub
+            ls: cannot access /Users/yoshidanao/.ssh/id_rsa.pub: No such file or directory
+            
 My try:
 
             yoshidanaonoMacBook-Pro:~ yoshidanao$ ssh-keygen
