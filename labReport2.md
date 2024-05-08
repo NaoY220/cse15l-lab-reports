@@ -205,7 +205,7 @@ Terminal:
 
 Note that I found that hidden directory `.ssh` contains both private and public key `id_rsa.pub` using VisualStudioCode:
 
-![Image](.png)
+![Image](id_rsa_private.png)
 
 
 <b>2. On the command line of the `ieng6` machine, run `ls` with the absolute path to the public key for your SSH key for logging into `ieng6` (this is the one you copied to your account on ieng6 using `ssh-copy-id`, so it should be a path on ieng6's file system).</b>
