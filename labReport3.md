@@ -158,14 +158,64 @@ Along with each option/mode you show, **cite your source** for how you found out
 
 ***
 
+`grep` : we can use this command for search and collect data in many ways.
+
 I used ChatGPT to see what kind of command that I can use with `grep`, and I got as the following:
 
 ![Image](chatGPT.cite1.png)
 
 ![Image](chatGPT.cite2.png)
 
+First setup for doing this task:
 
-1. `-e`
+        yoshidanao@yoshidanaonoMacBook-Pro ~ % cd docsearch
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % ls
+        DocSearchServer.java    biomednplos-sizes.txt   labrep3.txt             plos-sizes.txt          technical
+        README.md               count-txts.sh           lib                     size.txt
+        Server.java             find-results.txt        mostWord.txt            sizeOfstringSearch.txt
+        TestDocSearch.java      findMost.sh             newCount-txt.sh         sort.txt
+        biomed-sizes.txt        grep-results.txt        plos-size.txt           string.txt
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % find ./technical > labrep3.txt
+
+Note that I saved all contents of both txt files and directories inside `./technical` into `labrep3.txt`.
+
+1. `-e` : It will help us to specify several pattern to search the document if it contains at least one of patterns specified. 
+
+First example:
+
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -e "ti" -e "null" labrep3.txt
+        ./technical/government/About_LSC/diversity_priorities.txt
+        ./technical/government/About_LSC/reporting_system.txt
+        ./technical/government/Env_Prot_Agen/multi102902.txt
+        ./technical/government/Env_Prot_Agen/section-by-section_summary.txt
+        ./technical/government/Env_Prot_Agen/tech_sectiong.txt
+        ./technical/government/Gen_Account_Office/Testimony_cg00010t.txt
+        ./technical/government/Gen_Account_Office/GovernmentAuditingStandards_yb2002ed.txt
+        ./technical/government/Gen_Account_Office/Testimony_Jul15-2002_d02940t.txt
+        ./technical/government/Gen_Account_Office/Testimony_d01609t.txt
+        ./technical/government/Gen_Account_Office/Testimony_Jul17-2002_d02957t.txt
+        ./technical/government/Post_Rate_Comm/Cohenetal_Cost_Function.txt
+        ./technical/government/Media/balance_scales_of_justice.txt
+        ./technical/government/Media/Targeting_Domestic_Violence.txt
+        ./technical/government/Media/Supporting_Legal_Center.txt
+        ./technical/government/Media/Domestic_Violence_Ruling.txt
+        ./technical/government/Media/Abuse_penalties.txt
+        ./technical/government/Media/Justice_for_all.txt
+        ./technical/government/Media/Eviction_law.txt
+        ./technical/government/Media/Higher_Registration_Fees.txt
+        ./technical/government/Media/Fire_Victims_Sue.txt
+        ./technical/government/Media/Justice_requests.txt
+        ./technical/government/Media/man_on_national_team.txt
+        ./technical/government/Media/Attorney_gives_his_time.txt
+        ./technical/government/Media/All_May_Have_Justice.txt
+        ./technical/government/Media/Domestic_violence_aid.txt
+        ./technical/government/Media/fight_domestic_abuse.txt
+        ./technical/government/Media/The_Bend_Bulletin.txt
+        ./technical/government/Media/Entities_Merge.txt
+        ./technical/government/Media/Politician_Practices.txt
+        ./technical/government/Media/Retirement_Has_Its_Appeal.txt
+
+
 
 2. `-v`
 
