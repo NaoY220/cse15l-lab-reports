@@ -165,6 +165,24 @@ I used ChatGPT to see what kind of command that I can use with `grep`, and I got
 ![Image](chatGPT.cite2.png)
 
 
+1. `-e`
+
+2. `-v`
+
+3. `-c`
+
+4. `-n`
+
+5. `-l/-L`
+   
+6. `-m`, --max-count=NUM
+   
+7.  `--color=always`
+
+8.  `^` (I do not see it in chatGPT, but I think it is useful when I saw how it work in the class, so I explore with it)
+
+9.  `–f` (I do not see it in chatGPT, but I think it is useful when I saw how it work in the class, so I explore with it)
+
 
 --------
 
