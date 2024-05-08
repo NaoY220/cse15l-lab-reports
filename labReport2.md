@@ -104,18 +104,17 @@ It will help us to save our data everytime when user puts the data by adding(sto
 
 <ins>First input</ins>: `http://localhost:2040/add-message?s=Which language have you learned&user=nayosh`
 
-![Image](Fiirstinput.png)
+![Image](input1.png)
 
 <ins>Second input</ins>: `http://localhost:2040/add-message?s=I have learned Java, C++, R etc...&user=anonymous`
 
-![Image](Secondinput.png)
+![Image](input2.png)
 
-The ideal output for Second one is 
+From the screenshot of second output, it satisfy my expectation of having output as following: 
 
             nayosh: Which language have you learned
             anonymous: I have learned Java, C++, R etc...
 
-However, as I mentioned, I could not figure out the way to display the previous output together. 
 
 <b>2. Which methods in your code are called?</b>
 
