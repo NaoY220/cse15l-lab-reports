@@ -193,6 +193,8 @@ Include a screenshot for each of the following:
 --------
 
 
+![Image](input2.png)
+
 
 <b>1. On the command line of your computer, run `ls` with the absolute path to the private key for your SSH key for logging into `ieng6`.</b>
 
