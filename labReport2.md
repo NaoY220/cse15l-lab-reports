@@ -203,7 +203,7 @@ Terminal:
             yoshidanaonoMacBook-Pro:~ yoshidanao$ ls /Users/yoshidanao/.ssh/id_rsa
             /Users/yoshidanao/.ssh/id_rsa
 
-Note that I found that hidden directory `.ssh` contains both private and public key `id_rsa.pub` using VisualStudioCode:
+Note that I found that hidden directory `.ssh` contains both private and public key `id_rsa` using VisualStudioCode:
 
 ![Image](id_rsa_private.png)
 
@@ -217,12 +217,15 @@ Terminal:
             [nayoshida@ieng6-202]:~:117$ cd .ssh
             [nayoshida@ieng6-202]:.ssh:118$ ls
             authorized_keys
-            [nayoshida@ieng6-202]:.ssh:120$ ls /Users/yoshidanao/.ssh/id_rsa.pub
+            
+            [[nayoshida@ieng6-202]:~:129$ cd
+            [nayoshida@ieng6-202]:~:130$ ls /Users/yoshidanao/.ssh/id_rsa.pub
             ls: cannot access /Users/yoshidanao/.ssh/id_rsa.pub: No such file or directory
             
 
+I use `cat authorized_keys` and check if there is an encrypted keyword that matched to the content of `id_rsa.pub` using `command+F` search: 
 
-
+![Image](id_rsa_private.png)
 
 
 
