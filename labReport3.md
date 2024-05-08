@@ -143,6 +143,7 @@ Previous code tried to set value of `newArray` array which is `null` to the `arr
    
 <b>5. Briefly describe (2-3 sentences) why the fix addresses the issue.</b>
 
+The previous code tried to set value of `newArray` array which is `null(0)` to the `arr`array, so it resulted in returning `null(all 0) array` although the inputs are varied. However, the purpose of `reversed()` function is to return the new array with the numbers sorted in reversed order, so we need to update the content of `newArray` array using elements of `arr` array, and then, it work as intended. 
 
 Part 2 - Researching Commands
 --------
