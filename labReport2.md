@@ -225,13 +225,7 @@ Terminal:
 
 I use `cat authorized_keys` and check if there is an encrypted keyword that matched to the content of `id_rsa.pub` using `command+F` search: 
 
-![Image](id_rsa_private.png)
-
-
-
-
-
-
+![Image](CheckIfKeyMatch.png)
 
 
 <b>3. A terminal interaction where you log into your `ieng6` account without being asked for a password.</b>
