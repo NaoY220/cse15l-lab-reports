@@ -210,7 +210,7 @@ Note that I found that hidden directory `.ssh` contains both private and public 
 
 <b>2. On the command line of the `ieng6` machine, run `ls` with the absolute path to the public key for your SSH key for logging into `ieng6` (this is the one you copied to your account on ieng6 using `ssh-copy-id`, so it should be a path on ieng6's file system).</b>
 
---> I found that hidden directory `.ssh` contains both private and public key `id_rsa.pub` using VisualStudioCode.
+--> I explore how I can find the encrypted public key in remote `ieng6`, and I found that the public keys copied by `ssh-copy-id` are all contained inside the `authorized_keys`. I did multiple of time to use `ssh-copy-id` at the first try toward this lab, so it currently contains multiple of encrypted public keys.
 
 Terminal:
 
