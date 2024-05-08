@@ -132,6 +132,13 @@ Code after fixed:
             return newArray;
         }
 
+Note that I modified two points:
+
+1) from `arr[i] = newArray[arr.length - i - 1];` to `newArray[i] = arr[arr.length - i - 1];`
+2) from `return arr;` to `return newArray;`
+
+Previous code tried to set value of `newArray` array which is `null` to the `arr`array, so it resulted in returning `null array`. To return new array with the numbers sorted in reversed order, we need to update the content of `newArray` array using `arr` elements.
+
 --------
    
 <b>5. Briefly describe (2-3 sentences) why the fix addresses the issue.</b>
