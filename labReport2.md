@@ -227,6 +227,7 @@ I use `cat authorized_keys` and check if there is an encrypted keyword that matc
 
 ![Image](CheckIfKeyMatch.png)
 
+Note that the orange and gray highlight match to the encrypted key in `id_rsa.pub`.
 
 <b>3. A terminal interaction where you log into your `ieng6` account without being asked for a password.</b>
 
