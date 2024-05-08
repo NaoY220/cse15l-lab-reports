@@ -25,4 +25,6 @@ Instruction
 3. 
 --------
 
-Completed: th, 2024  |  Lab due: th, 2024  |  GitHub link: 
+Completed: th, 2024 
+Lab due: th, 2024 
+GitHub link: 
