@@ -123,20 +123,18 @@ From the screenshot of second output, it satisfy my expectation of having output
 
 <b>3. What are the relevant arguments to those methods, and the values of any relevant fields of the class?</b>
 
---> I will see one by one. For `class Handler`, it has method `handleRequest(URI url)`. This method receive the parameter `url` which is the object of `URI` is `URL identifer` and it is usable through URI library: `import java.net.URI;` which allow us to use several functions such that `getPath()` for getting the `path of URL` and `getQuery()` for finding the line after the `query ?` position. The value of `message` and `username` is `variable` to display in webpage, and each receive the data `<string>` from the URL parameter `s=<string>&user=<string>`.
+--> I will see one by one. For `class Handler`, it has method `handleRequest(URI url)`. This method receive the parameter `url` which is the object of `URI` is `URL identifer` and it is usable through URI library: `import java.net.URI;` which allow us to use several functions such that `getPath()` for getting the `path of URL` and `getQuery()` for finding the line after the `query ?` position. The value of `message` and `username` is `variable` to display in webpage, and each receive the data `<string>` from the URL parameter `s=<string>&user=<string>`. For example, if user entered: `/add-message?s=High Five!&user=HFman`, then 'message' accept `High Five!`, and `user` accept `HFman` as input data provided by user. 
 
             class Handler implements URLHandler {
+                    String chatHis = "";
+            
               public String handleRequest(URI url){
                     String username = "", message = "";
-                    //List<String> outputs;
-            
                     if (url.getPath().equals("/")) {
                     return "it is home page! to add message, use the format: /add-message?s=<string>&user=<string>";
                     }
                     else{
                         if (url.getPath().equals("/add-message")) {
-                            //FileWriter addSentence = new FileWriter("Thread.txt");
-            
                             String[] parameters = url.getQuery().split("&");
                             if (parameters[0].substring(0,2).equals("s=")) {
                                 message = parameters[0].substring(2, parameters[0].length());
@@ -144,14 +142,14 @@ From the screenshot of second output, it satisfy my expectation of having output
                             if (parameters.length==2 && parameters[1].substring(0,5).equals("user=")) {
                                 username = parameters[1].substring(5, parameters[1].length());
                             }
-                            /*
-                            outputs = Files.readAllLines(Paths.get("Thread.txt"));
-                            addSentence.write(String.format("%s: %s\n", username, message));
-                            addSentence.close();
-                            */
-                            //return String.join("\n", outputs) + "\n" + String.format("%s: %s\n", username, message);
+                            if(username == "" || message == ""){
+                                return "Enter the valid input to send your message";
+                            }
             
-                            return String.format("%s: %s\n", username, message);
+                            //Store the data "string(user): string(s)" everytime user enter "/add-message?s=<string>&user=<string>" next to
+                            //the server that user set up.
+                            this.chatHis = chatHis + username + ": " + message + "\n";
+                            return this.chatHis;
                         }
                         return "invalid path!";
                     }
