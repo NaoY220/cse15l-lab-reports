@@ -181,7 +181,7 @@ Note that I saved all contents of both txt files and directories inside `./techn
 
 1. `-e` : It will help us to specify several pattern to search the document if it contains at least one of patterns specified. 
 
-First example:
+First example with files:
 
         yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -e "ti" -e "hi" labrep3.txt                          
         ./technical/government/About_LSC/diversity_priorities.txt
@@ -266,6 +266,60 @@ To see if the file really contain either `"ti"`, `"hi"`, or both, I use `grep "h
         yoshidanao@yoshidanaonoMacBook-Pro docsearch % 
 
 From the above, we can see that `./technical/government/Media/Attorney_gives_his_time.txt` appear in both of the result of each command, so it has both `"ti"` and `"hi"`. Also, it is case-sensitive. 
+
+Another example with directories:
+
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -e "ti" -e "hi" technical/biomed 
+        grep: technical/biomed: Is a directory
+
+
+
+
+
+
+        
+
+If I tried to use `grep -e` command for directory, terminal indicates that this command does not interact with directory. However, `-e` can work with directory if we use other command like `-re` for finding the patterns in multiple files across multiple directories.
+
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -re "hi " -e "gone"  technical/biomed 
+        technical/biomed/1471-2350-4-3.txt:            Caucasian adult subjects from Alabama who had undergone
+        technical/biomed/1471-2350-4-3.txt:            Alabama who had undergone testing to establish
+        technical/biomed/cc991.txt:          for suctioning included rhonchi on auscultation, audible
+        technical/biomed/cc991.txt:        described [ 27]. Horiuchi 
+        technical/biomed/1471-2164-2-9.txt:          undergone a "concerted" phylogenetic evolution, with the
+        technical/biomed/1471-2148-2-12.txt:          etc.) and has undoubtedly undergone some general
+        technical/biomed/1471-2202-2-8.txt:          undergone considerable change, including CSPG
+        technical/biomed/1471-2121-3-13.txt:        that observed with cCAF, and therefore gone unnoticed.
+        technical/biomed/gb-2003-4-4-r26.txt:          unspliced introns) or have undergone more rapid molecular
+        technical/biomed/1471-2148-1-8.txt:            M. jannaschi (Table 1). The value
+        technical/biomed/bcr568.txt:        Among 181 NNBC patients who had undergone
+        technical/biomed/1477-7827-1-17.txt:          (10 μM, DEVD sequence; Phi Phi Lux; OncoImmunin, Inc,
+        technical/biomed/1477-7827-1-17.txt:          Phi Phi Lux) was easily detected by 8 h after TNFα
+        technical/biomed/gb-2003-4-7-r42.txt:          is that members of the K box-family have undergone
+        technical/biomed/ar68.txt:        undergone (auto)antigen and T cell selection and rescue,
+        technical/biomed/1472-6750-1-12.txt:        undergone a successful homologous recombination event
+        technical/biomed/1471-2334-1-24.txt:          were carried out using virus that had undergone a single
+        technical/biomed/1472-6874-2-1.txt:        age of 65, 1 of 3 women will have undergone a hysterectomy
+        technical/biomed/1472-6874-2-1.txt:        had undergone a TAH or SCH at The New York-Presbyterian
+        technical/biomed/1472-6874-2-1.txt:        patients who were on HRT had undergone BSO. Perhaps this is
+        technical/biomed/1472-6793-2-8.txt:          Sacchi [ 32 ] . RNA preparations were quantified by
+        technical/biomed/1471-2474-2-1.txt:          a control cohort of 241 patients who had undergone
+        technical/biomed/1471-2474-2-1.txt:        student's t test, Chi square analysis or Mann-Whitney U
+        technical/biomed/1471-2474-2-1.txt:        undergone total hip arthroplasty, however only 41 of the
+        technical/biomed/1471-2474-2-1.txt:        100 Swedish patients who had undergone hip arthroplasty,
+        technical/biomed/1471-2474-2-1.txt:        undergone total hip arthroplasty (30 of whom had a
+        technical/biomed/rr171.txt:          and major bronchi were then excised and the lung cut into
+        technical/biomed/1471-2350-4-4.txt:          All affected individuals had undergone pacemaker
+        technical/biomed/ar297.txt:            comparison, DNASIS software (Hitachi Europe, Olivet,
+        technical/biomed/gb-2002-3-9-research0051.txt:          Chlamydial species have generally undergone reductive
+        technical/biomed/1471-2415-3-3.txt:          gold and viewed on a Hitachi S-3500N scanning electron
+        technical/biomed/gb-2002-3-9-research0045.txt:          and local duplications [ 2, 43]. Maize has undergone an
+        technical/biomed/1477-7819-1-10.txt:        (Table 2). All the patients had undergone primary surgical
+        technical/biomed/1477-7819-1-10.txt:        I bilaterally and the patient had undergone bilateral vein
+        technical/biomed/1471-2229-2-4.txt:          leaves and have cotyledons that have undergone little
+        technical/biomed/1472-6904-2-5.txt:          measurements of Takahashi et. al. [ 25 ] of the plasma
+        technical/biomed/1472-6904-2-5.txt:          of Takahashi et. al [ 25 ] in which the oral absorption
+        ...(I just cut because it is too long)
 
 2. `-v`
 
