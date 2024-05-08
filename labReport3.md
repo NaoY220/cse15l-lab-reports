@@ -74,7 +74,7 @@ Note that this returns `failure` due not to match expected and actual outputs:
         FAILURES!!!
         Tests run: 1,  Failures: 1
 
-We see that the error is found in `element [1]` of array that contains actual value `0`, not expected `5`. It happens because there is an error in the `reversed()` function in `ArrayExamples.java` and `ArrayExamples.reversed(input1)` results in `{0,0,0,0}` instead of `{0, 5, 3, -1}`. The reason why we do not see no more explanation of error we face other than `expected:<5> but was:<0>` is because it stop running immediately when the program find out there is error(exception). 
+We see that the error is found in `element [1]` of array that contains actual value `0`, not expected `5`. It happens because there is an error in the `reversed()` function in `ArrayExamples.java` and `ArrayExamples.reversed(input1)` results in `{0,0,0,0}` instead of `{0, 5, 3, -1}`. The reason why we do not see no more explanation of error we face other than `expected:<5> but was:<0>` is because it leave current `test` function immediately when the program find out there is error(exception). 
 
 --------
    
@@ -104,7 +104,9 @@ Note that there is no error because the expected and actual values matched.
    
 <b>3. The symptom, as the output of running the two tests above (provide it as a **screenshot** -- one test should pass, one test should fail).</b>
 
+![Image](symptom.png)
 
+Note that we will know it processed two tests out and found 1 failure : `Tests run: 2,  Failures: 1`
 
 --------
    
