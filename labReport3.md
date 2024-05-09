@@ -599,8 +599,9 @@ As like other commands, `--color` do not interact directly, so we can use `-r --
 
 Note that we can see the highlight in terminal as following:
 
-![Image](colorCommand.png)
+![Image](colorCommand2.png)
 
+I think it should be useful when we want to know how the pattern was used in sentence or to check if it has the expected format data like if it has the form of : `".txt : "` or `".txt ... "`. Especially, when we have so many files and datas, we can find out where is the pattern soon by making it visible with color. 
 
 **The two commands following was not produced in chatGPT, but I think it is useful when I saw how it work in the class, so I explore with it**
 
