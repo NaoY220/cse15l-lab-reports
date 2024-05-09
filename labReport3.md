@@ -414,11 +414,75 @@ As I expected, `-c` did directly not work with directory, and similar to `-rv` w
 
 It is helpful because it will tell us if each document contains key phrase we set, and we can confirm the number of documents which include the key phrase by setting up some codes to see it. What I came up the example we can use `-c` or `-rc` command is that we can see the tendency of using words, phase and data. For example, assuming each surveyed file which contains the birthDate, and we can see the age tendency by set `grep -rc "<barth year>" /surveryResult`.
 
-<b>4. `-l/-L` : </b>
+<b>4. `-l` : it will display the names of files containing at least one line matched to pattern.</b>
 
 First example with files:
 
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -l "Good" technical/911report/chapter-12.txt
+        technical/911report/chapter-12.txt
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -l "Good" technical/911report/chapter-10.txt  
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % 
+
+Note that I choosed above txt files from the result of command `grep -rc "Good" technical`. `technical/911report/chapter-12.txt` has `2` lines, and `technical/911report/chapter-10.txt` has `0` line contained `"Good"`, so the above result makes sense!
+
 Another example with directories:
+
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -l "Good" technical              
+        grep: technical: Is a directory
+
+As like other commands, `-l` do not interact directly, so we can use `-rl` instead of using `-l`: 
+
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -rl "Good" technical  
+        technical/government/Env_Prot_Agen/ctf1-6.txt
+        technical/government/Env_Prot_Agen/ro_clear_skies_book.txt
+        technical/government/Env_Prot_Agen/1-3_meth_901.txt
+        technical/government/Env_Prot_Agen/atx1-6.txt
+        technical/government/Gen_Account_Office/d0269g.txt
+        technical/government/Gen_Account_Office/d01376g.txt
+        technical/government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
+        technical/government/Gen_Account_Office/pe1019.txt
+        technical/government/Gen_Account_Office/gg96118.txt
+        technical/government/Gen_Account_Office/Testimony_d01609t.txt
+        technical/government/Gen_Account_Office/Oct15-1999_gg00026t.txt
+        technical/government/Gen_Account_Office/InternalControl_ai00021p.txt
+        technical/government/Gen_Account_Office/og98022.txt
+        technical/government/Gen_Account_Office/og98032.txt
+        technical/government/Gen_Account_Office/og98024.txt
+        technical/government/Gen_Account_Office/og97039.txt
+        technical/government/Gen_Account_Office/ai2132.txt
+        technical/government/Gen_Account_Office/og97003.txt
+        technical/government/Post_Rate_Comm/Gleiman_EMASpeech.txt
+        technical/government/Post_Rate_Comm/Gleiman_gca2000.txt
+        technical/government/Media/Good_guys_reward.txt
+        technical/government/Media/highlight_Senior_Day.txt
+        technical/government/Media/Terrorist_Attack.txt
+        technical/government/Media/Civil_Matters.txt
+        technical/government/Media/Lawyer_Web_Survey.txt
+        technical/government/Media/A_helping_hand.txt
+        technical/plos/pmed.0020210.txt
+        technical/plos/journal.pbio.0020043.txt
+        technical/plos/pmed.0010071.txt
+        technical/plos/journal.pbio.0020052.txt
+        technical/plos/pmed.0020187.txt
+        technical/plos/pmed.0010068.txt
+        technical/biomed/1472-6947-3-8.txt
+        technical/biomed/1471-2148-2-15.txt
+        technical/biomed/1471-2172-1-1.txt
+        technical/biomed/1471-2105-2-9.txt
+        technical/biomed/gb-2002-3-11-research0062.txt
+        technical/biomed/1471-2377-3-4.txt
+        technical/biomed/1471-2334-2-27.txt
+        technical/biomed/1471-2458-2-25.txt
+        technical/biomed/1472-6882-1-10.txt
+        technical/biomed/1475-2867-2-10.txt
+        technical/biomed/1472-6947-1-6.txt
+        technical/911report/chapter-13.5.txt
+        technical/911report/chapter-13.1.txt
+        technical/911report/chapter-12.txt
+
+Here, we can see `technical/911report/chapter-12.txt` again, so we can clarify the command work correctly(I know it should) by using `-rc` if the file has at least one line which contained the pattern. 
+
+It is helpful as `-rc`, but it should be more efficient way than `-rc` because it does not include the file names which has `0` lines contained pattern depending on our purpose. It should help us to have better efficiency to do task with the great amount of data by filtering out the unessential files. Note that we can use `-L` command which will display the names of files which do not contain the line matched to pattern.
 
 <b>5. `-m`, `--max-count=NUM` : </b>
 
