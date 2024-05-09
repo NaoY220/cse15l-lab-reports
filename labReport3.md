@@ -377,11 +377,40 @@ Note that if I use `-v` for the file which contains the list of .txt files, it w
 
 `-v` and `-rv` should be helpful because it is easy to remove the document which we do not want to see as like the first example, or hide some datas which is more private one by setting some key phrase like `"private: "`. Also, this command should help us to have better efficient of doing some tasks with enormous data by filtering some wasted or wanted data.
 
-<b>3. `-c` : </b>
+<b>3. `-c` : It will count the number of lines that match the pattern and display it. </b>
 
 First example with files:
 
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -c ".txt" labrep3.txt
+        1392
+
+It means that `labrep3.txt` has `1392` lines which contains `".txt"`.
+
 Another example with directories:
+
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -c "Good" technical  
+        grep: technical: Is a directory
+
+As I expected, `-c` did directly not work with directory, and similar to `-rv` work, we can count the number of lines of each file contains the pattern `"Good"` by the command `-rc` to interact with directory. 
+
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -rc "Good" technical  
+        ...
+        technical/911report/chapter-13.2.txt:0
+        technical/911report/chapter-13.3.txt:0
+        technical/911report/chapter-3.txt:0
+        technical/911report/chapter-2.txt:0
+        technical/911report/chapter-1.txt:0
+        technical/911report/chapter-5.txt:0
+        technical/911report/chapter-6.txt:0
+        technical/911report/chapter-7.txt:0
+        technical/911report/chapter-9.txt:0
+        technical/911report/chapter-8.txt:0
+        technical/911report/preface.txt:0
+        technical/911report/chapter-12.txt:2
+        technical/911report/chapter-10.txt:0
+        technical/911report/chapter-11.txt:0
+
+
 
 <b>4. `-l/-L` : </b>
 
