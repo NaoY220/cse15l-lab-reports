@@ -660,17 +660,54 @@ and we can use `^` to gather only one information of each data like: `grep -r "^
 
 It will help us to see a partial data and hide non-necessary data. 
 
-<b>8.  `–f` : </b>
+<b>8.  `–f` : it will allow us to specify a file containing a `list of patterns` we want to search for. </b>
+
+The file I used for search is `searchStr.txt`:
+
+        hi
+        mm
 
 First example with files:
+        
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -f searchStr.txt labrep3.txt
+        ./technical/government/About_LSC/Comments_on_semiannual.txt
+        ./technical/government/About_LSC/commission_report.txt
+        ./technical/government/About_LSC/conference_highlights.txt
+        ./technical/government/Env_Prot_Agen/section-by-section_summary.txt
+        ./technical/government/Post_Rate_Comm
+        ./technical/government/Post_Rate_Comm/Gleiman_EMASpeech.txt
+        ./technical/government/Post_Rate_Comm/Mitchell_spyros-first-class.txt
+        ./technical/government/Post_Rate_Comm/Cohenetal_CreamSkimming.txt
+        ./technical/government/Post_Rate_Comm/Cohenetal_DeliveryCost.txt
+        ./technical/government/Post_Rate_Comm/Mitchell_RMVancouver.txt
+        ./technical/government/Post_Rate_Comm/Gleiman_gca2000.txt
+        ./technical/government/Post_Rate_Comm/Cohenetal_Cost_Function.txt
+        ./technical/government/Post_Rate_Comm/Redacted_Study.txt
+        ./technical/government/Post_Rate_Comm/Mitchell_6-17-Mit.txt
+        ./technical/government/Post_Rate_Comm/Cohenetal_comparison.txt
+        ./technical/government/Post_Rate_Comm/Cohenetal_Scale.txt
+        ./technical/government/Post_Rate_Comm/Cohenetal_RuralDelivery.txt
+        ./technical/government/Post_Rate_Comm/ReportToCongress2002WEB.txt
+        ./technical/government/Post_Rate_Comm/WolakSpeech_usps.txt
+        ./technical/government/Media/Legal-aid_chief.txt
+        ./technical/government/Media/highlight_Senior_Day.txt
+        ./technical/government/Media/Philly_Lawyers.txt
+        ./technical/government/Media/Commercial_Appeal.txt
+        ./technical/government/Media/Low-income_children.txt
+        ./technical/government/Media/Attorney_gives_his_time.txt
+        ./technical/government/Media/CommercialAppealMemphis2.txt
+
+These lines contain either `"hi"` or `"mm"` or both!
 
 Another example with directories:
+
+        
 
 
 --------
 
-Completed: th, 2024  
+Completed: 8th, 2024  
 
-Lab due: th, 2024  
+Lab due: 8th, 2024  
 
 GitHub link: 
