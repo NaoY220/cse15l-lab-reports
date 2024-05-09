@@ -410,7 +410,9 @@ As I expected, `-c` did directly not work with directory, and similar to `-rv` w
         technical/911report/chapter-10.txt:0
         technical/911report/chapter-11.txt:0
 
+`-rc` counts the lines which contains pattern in each files which are under the directry specified in command, and returns each file name and the number of the count of lines satisfied the pattern in the form `<filename>:<number of count>`.
 
+It is helpful because it will tell us if each document contains key phrase we set, and we can confirm the number of documents which include the key phrase by setting up some codes to see it. What I came up the example we can use `-c` or `-rc` command is that we can see the tendency of using words, phase and data. For example, assuming each surveyed file which contains the birthDate, and we can see the age tendency by set `grep -rc "<barth year>" /surveryResult`.
 
 <b>4. `-l/-L` : </b>
 
