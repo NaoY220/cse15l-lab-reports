@@ -533,11 +533,37 @@ I can confirm that `-rm 10` works correctly: there are 10 `technical/biomed/gb-2
 
 Sometimes `grep -e "<string>" <file/directory>` gives us so long long result, but `-m NUM` or `-rm NUM` can help us to reduce the line of outputs. This command should be helpful when we want to treat/use a small and partial data. For example, we can use a piece of survey collected from many people by using `-m NUM` command in order to build temporal data of tendency or collection.
 
-<b>6.  `--color=always` : </b>
+<b>6.  `--color=always` : it will highlights the pattern matched in file with color</b>
 
 First example with files:
 
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep --color=always "bo" labrep3.txt
+        ./technical/government/About_LSC
+        ./technical/government/About_LSC/LegalServCorp_v_VelazquezSyllabus.txt
+        ./technical/government/About_LSC/Progress_report.txt
+        ./technical/government/About_LSC/Strategic_report.txt
+        ./technical/government/About_LSC/Comments_on_semiannual.txt
+        ./technical/government/About_LSC/Special_report_to_congress.txt
+        ./technical/government/About_LSC/CONFIG_STANDARDS.txt
+        ./technical/government/About_LSC/commission_report.txt
+        ./technical/government/About_LSC/LegalServCorp_v_VelazquezDissent.txt
+        ./technical/government/About_LSC/ONTARIO_LEGAL_AID_SERIES.txt
+        ./technical/government/About_LSC/LegalServCorp_v_VelazquezOpinion.txt
+        ./technical/government/About_LSC/diversity_priorities.txt
+        ./technical/government/About_LSC/reporting_system.txt
+        ./technical/government/About_LSC/State_Planning_Report.txt
+        ./technical/government/About_LSC/Protocol_Regarding_Access.txt
+        ./technical/government/About_LSC/ODonnell_et_al_v_LSCdecision.txt
+        ./technical/government/About_LSC/conference_highlights.txt
+        ./technical/government/About_LSC/State_Planning_Special_Report.txt
+        ./technical/government/Env_Prot_Agen/ro_clear_skies_book.txt
+        ./technical/government/Media/Barnes_pro_bono.txt
+        ./technical/government/Media/Pro-bono_road_show.txt
+        ./technical/government/Media/pro_bono_efforts.txt
 
+Note that we can see the highlight in terminal as following:
+
+![Image](chatGPT.cite1.png)
 
 Another example with directories:
 
