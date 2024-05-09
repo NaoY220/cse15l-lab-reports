@@ -321,11 +321,61 @@ This command `-e` (also `-re`) is useful because it often make our life easier t
 to find my data from millions of datas in UCSD student data.
 
 
-<b>2. `-v` : It will selects lines that do not match the <string> used for search.</b>
+<b>2. `-v` : It will selects and display the lines that do not match the <string> used for search.</b>
 
 First example with files:
 
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -v ".txt" labrep3.txt
+        ./technical
+        ./technical/government
+        ./technical/government/About_LSC
+        ./technical/government/Env_Prot_Agen
+        ./technical/government/Alcohol_Problems
+        ./technical/government/Gen_Account_Office
+        ./technical/government/Post_Rate_Comm
+        ./technical/government/Media
+        ./technical/.DS_Store
+        ./technical/plos
+        ./technical/biomed
+        ./technical/911report
+
+The above command finally displayed only the directories other than the txt files because I set `-v ".txt"`, so file names all contains `".txt"` will not be ignored(not be displayed).
+
 Another example with directories:
+
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -v "1476" technical  
+        grep: technical: Is a directory
+
+Samely as `-e`, `-v` does not directly interact with directory, so we can set `-rv` for setting directory:
+
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -rv "a" technical
+        ...        
+        technical/911report/chapter-11.txt:            
+        technical/911report/chapter-11.txt:            
+        technical/911report/chapter-11.txt:            The high price of keeping counterterrorism policy within the restricted circle of the
+        technical/911report/chapter-11.txt:            
+        technical/911report/chapter-11.txt:                counterterrorism.
+        technical/911report/chapter-11.txt:                or too disruptive.
+        technical/911report/chapter-11.txt:            MANAGEMENT
+        technical/911report/chapter-11.txt:            
+        technical/911report/chapter-11.txt:                    field.
+        technical/911report/chapter-11.txt:            
+        technical/911report/chapter-11.txt:            
+        technical/911report/chapter-11.txt:            
+        technical/911report/chapter-11.txt:            
+        technical/911report/chapter-11.txt:                    community.
+        technical/911report/chapter-11.txt:            
+        technical/911report/chapter-11.txt:            
+        technical/911report/chapter-11.txt:            The Millennium Exception
+        technical/911report/chapter-11.txt:                Congress.
+        technical/911report/chapter-11.txt:                    themselves.
+        technical/911report/chapter-11.txt:            
+        technical/911report/chapter-11.txt:        
+        technical/911report/chapter-11.txt: 
+
+Note that if I use `-v` for the file which contains the list of .txt files, it will conly read each name of .txt files as just a string. For `-rv`, it will check the every content of files and check if each line in each file does not contain the phrase I set in the command line: in that case, `"a"`. 
+
+`-v` and `-rv` should be helpful because it is easy to remove the document which we do not want to see as like the first example, or hide some datas which is more private one by setting some key phrase like `"private: "`. Also, this command should help us to have better efficient of doing some tasks with enormous data by filtering some wasted or wanted data.
 
 <b>3. `-c` : </b>
 
