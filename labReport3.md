@@ -563,9 +563,44 @@ First example with files:
 
 Note that we can see the highlight in terminal as following:
 
-![Image](chatGPT.cite1.png)
+![Image](colorCommand.png)
 
 Another example with directories:
+
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep --color=always ".txt" technical
+        grep: technical: Is a directory
+
+As like other commands, `--color` do not interact directly, so we can use `-r --color` instead of using `--color`: 
+
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -r --color=always ".txt" technical
+        technical/biomed/gb-2003-4-5-r34.txt:            20,000), and repeat the process. The Readme.txt file
+        technical/biomed/gb-2001-2-7-research0025.txt:        Pfam_Annotation.txt
+        technical/biomed/gb-2001-2-7-research0025.txt:        Protein_Annotation.txt
+        technical/biomed/gb-2002-3-7-research0037.txt:        README.txt contains instructions for installation and
+        technical/biomed/gb-2002-3-6-software0001.txt:        as .txt files (tab-delimited text, refer to the user's
+        technical/biomed/gb-2002-3-12-research0078.txt:          .txt extension.
+        technical/biomed/gb-2001-2-9-research0037.txt:          hyb2dis.txt in additional data files). More importantly,
+        technical/biomed/gb-2001-2-9-research0037.txt:        hyb2dis.txt: patch file that converts White's hybridize
+        technical/biomed/gb-2001-2-9-research0037.txt:        Training sets(GlycineMedicago.txt,Rhizobia.txt,
+        technical/biomed/gb-2001-2-9-research0037.txt:        Stramenopiles.txt, ZygoChytrid.txt): FASTA-formatted text
+        technical/biomed/gb-2001-2-9-research0037.txt:        Test sets(PsojaeHA.txt, PsojaeMY.txt, PsojaeZO.txt,
+        technical/biomed/gb-2001-2-9-research0037.txt:        MtRHE.txt, DSIR.txt, MHAM.txt, KV0.txt, KV2.txt, KV3.txt):
+        technical/biomed/gb-2001-2-9-research0037.txt:        hyb2dis.txt
+        technical/biomed/gb-2001-2-9-research0037.txt:        hyb2dis.txt
+        technical/biomed/gb-2001-2-9-research0037.txt:        GlycineMedicago.txt
+        technical/biomed/gb-2001-2-9-research0037.txt:        Rhizobia.txt
+        technical/biomed/gb-2001-2-9-research0037.txt:        Stramenopiles.txt
+        technical/biomed/gb-2001-2-9-research0037.txt:        ZygoChytrid.txt
+        technical/biomed/gb-2001-2-9-research0037.txt:        PsojaeHA.txt
+        technical/biomed/gb-2001-2-9-research0037.txt:        PsojaeMY.txt
+        technical/biomed/gb-2001-2-9-research0037.txt:        PsojaeZO.txt
+        technical/biomed/gb-2001-2-9-research0037.txt:        MtRHE.txt
+        ...
+
+Note that we can see the highlight in terminal as following:
+
+![Image](colorCommand.png)
+
 
 **The two commands following was not produced in chatGPT, but I think it is useful when I saw how it work in the class, so I explore with it**
 
