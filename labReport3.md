@@ -730,7 +730,9 @@ These lines contain either `"One day"` or `" cat "` or both!
 
 It should be helpful because we can store the data which we used for search. Also, we do not need to re-write the `<string>` in the terminal to search once we created txt file used for search like we can create "patterns" to have efficient future work. For example, we can store strings in txt file: `"username\n"`, `"barthdate\n"`,`"gender"`,...
 
+Note that all of the above commands allow us to combine to be more specific to search. 
 
+It is the first time to use these command, I am enjoying learning them!
 
 --------
 
