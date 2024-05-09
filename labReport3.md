@@ -699,9 +699,37 @@ First example with files:
 
 These lines contain either `"hi"` or `"mm"` or both!
 
+The file I used for search is `searchStr2.txt`:
+
+        One day
+         cat 
+
 Another example with directories:
 
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -r -f searchStr2.txt technical
+        technical/government/About_LSC/ONTARIO_LEGAL_AID_SERIES.txt:and unshackled, is a dream that we will achieve. One day. Together.
+        technical/government/Media/Legal-aid_chief.txt:One day, German was out throwing passes at an early practice.
+        technical/government/Media/Barnes_Volunteers.txt:"One day I'll probably do some legal work that I will charge a
+        technical/government/Media/Attorney_gives_his_time.txt:"Someone's cat was bit by a dog, as I recall," he said.
+        technical/plos/journal.pbio.0020146.txt:        nerve fibers in the rat and cat and some 25,000–30,000 in the human (cf. Hall and Masengill
+        technical/plos/pmed.0010045.txt:          not shown). One day after plating, resistin gene expression remained detectable at low
+        technical/plos/pmed.0020034.txt:        to inadequate exposure, since all estimates of the quantity of cat allergen inhaled are
+        technical/plos/pmed.0020034.txt:        higher than for dust mites. Furthermore, the quantity of cat allergen found in schools or
+        technical/plos/pmed.0020034.txt:        In fact, children raised in a house with a cat were less likely to be sensitized to cats
+        technical/plos/pmed.0020034.txt:        keep cats, and very few families report choosing not to own a cat because of asthma in the
+        technical/plos/pmed.0020034.txt:        family. Furthermore, the presence of a cat in a house in New Zealand does not decrease IgE
+        technical/plos/pmed.0020034.txt:        Understanding how the response to cat allergen is controlled could provide an insight into
+        technical/plos/pmed.0020034.txt:        from the cat allergen Fel d 1, which give T cell responses, can be used for immunotherapy
+        technical/plos/pmed.0020034.txt:        both allergic and non-allergic responses to cat allergen (Figure 3). In keeping with this,
+        technical/plos/pmed.0020034.txt:        IgE antibody responses to cat allergen are not quantitatively as high as those to dust
+        technical/plos/pmed.0020034.txt:        exposure to high concentrations of cat allergen, which can induce IL-10 producing cells,
+        technical/plos/pmed.0020034.txt:        Sweden, the presence of a cat in the house is associated with decreased sensitization to
+        ...
         
+These lines contain either `"One day"` or `" cat "` or both!
+
+It should be helpful because we can store the data which we used for search. Also, we do not need to re-write the `<string>` in the terminal to search once we created txt file used for search like we can create "patterns" to have efficient future work. For example, we can store strings in txt file: `"username\n"`, `"barthdate\n"`,`"gender"`,...
+
 
 
 --------
