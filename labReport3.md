@@ -605,11 +605,60 @@ I think it should be useful when we want to know how the pattern was used in sen
 
 **The two commands following was not produced in chatGPT, but I think it is useful when I saw how it work in the class, so I explore with it**
 
-<b>7.  `^` : </b>
+<b>7. `^` : put `^` before the `<string>` which is used for search, then `grep` looks for the line starting with that `<striing>` </b>
+
+ex) `grep "^aloha" filename.txt`
 
 First example with files:
 
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep "^One" technical/government/Media/Legal-aid_chief.txt
+        One step toward that goal was a recent pledge by some of the
+        One day, German was out throwing passes at an early practice.
+
+We can see that there are two lines starting with `"One"`! We can compare with:
+
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep "One" technical/government/Media/Legal-aid_chief.txt
+        One step toward that goal was a recent pledge by some of the
+        One day, German was out throwing passes at an early practice.
+        People often dropped by asking to run a few plays. One was a skinny
+
+where the last line has `"One"`, but line does not start with `"One"`, so `grep "^One" technical/government/Media/Legal-aid_chief.txt` returns only the first two lines which are starting with `"One"`.
+
 Another example with directories:
+
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -r "^One" technical                              
+        technical/government/About_LSC/Strategic_report.txt:One of the best ways to help the approximately 80 percent of
+        technical/government/About_LSC/Strategic_report.txt:One of the most powerful ways to expand client services and
+        technical/government/About_LSC/Strategic_report.txt:One of best ways to obtain uniformly high quality services is to
+        technical/government/About_LSC/State_Planning_Report.txt:One final thought. Although state planning is LSC's highest
+        technical/government/About_LSC/State_Planning_Report.txt:One important outcome of the state's recent planning was the
+        technical/government/About_LSC/State_Planning_Report.txt:One year later, the three federally-funded legal services
+        technical/government/Env_Prot_Agen/multi102902.txt:One factor that can increase the time to install a scrubber is
+        technical/government/Env_Prot_Agen/final.txt:One of the reasons power generation accounts for such a large
+        technical/government/Env_Prot_Agen/ctm4-10.txt:One successful method used is a thermostatically controlled heat
+        technical/government/Env_Prot_Agen/tech_adden.txt:One important assumption that we adopted for the threshold
+        technical/government/Alcohol_Problems/Session2-PDF.txt:One screen has been developed for emergency department use, the
+        technical/government/Alcohol_Problems/Session3-PDF.txt:One of the innovations being tested at this time is the use of
+        technical/government/Alcohol_Problems/Session4-PDF.txt:One study of 2,500 randomly selected emergency department
+        technical/government/Alcohol_Problems/Session4-PDF.txt:One area of research that has not received much attention in our
+        technical/government/Gen_Account_Office/d0269g.txt:One of the biggest hurdles that many entities face in the
+        technical/government/Gen_Account_Office/Testimony_cg00010t.txt:One of the important issues that reflect this goal and its
+        technical/government/Gen_Account_Office/GovernmentAuditingStandards_yb2002ed.txt:One of the most effective ways to ensure that a report is
+        technical/government/Gen_Account_Office/GovernmentAuditingStandards_yb2002ed.txt:One of the most effective ways to ensure that a report is
+        ...
+
+We can see that there are only files which starting with `"One"`!
+
+It should be useful because sometimes we store data like:
+
+        firstname:
+        lastname:
+        birthdate:
+        ...
+        
+and we can use `^` to gather only one information of each data like: `grep -r "^firstname" user.txt`, `grep -r "^lastname" user.txt`...
+
+It will help us to see a partial data and hide non-necessary data. 
 
 <b>8.  `–f` : </b>
 
