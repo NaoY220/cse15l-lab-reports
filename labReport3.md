@@ -484,15 +484,60 @@ Here, we can see `technical/911report/chapter-12.txt` again, so we can clarify t
 
 It is helpful as `-rc`, but it should be more efficient way than `-rc` because it does not include the file names which has `0` lines contained pattern depending on our purpose. It should help us to have better efficiency to do task with the great amount of data by filtering out the unessential files. Note that we can use `-L` command which will display the names of files which do not contain the line matched to pattern.
 
-<b>5. `-m`, `--max-count=NUM` : </b>
+<b>5. `-m NUM` : it will stop searching after finding `NUM` matches and . </b>
 
 First example with files:
+        
+        grep -m 10 ".txt" labrep3.txt
+        ./technical/find-results.txt
+        ./technical/government/About_LSC/LegalServCorp_v_VelazquezSyllabus.txt
+        ./technical/government/About_LSC/Progress_report.txt
+        ./technical/government/About_LSC/Strategic_report.txt
+        ./technical/government/About_LSC/Comments_on_semiannual.txt
+        ./technical/government/About_LSC/Special_report_to_congress.txt
+        ./technical/government/About_LSC/CONFIG_STANDARDS.txt
+        ./technical/government/About_LSC/commission_report.txt
+        ./technical/government/About_LSC/LegalServCorp_v_VelazquezDissent.txt
+        ./technical/government/About_LSC/ONTARIO_LEGAL_AID_SERIES.txt
+
+We see that there are `10` lines which contains `".txt"` from `labrep3.txt`. If I change the number from `10` to `20`, it will display `10 more lines` which contains `".txt"`.
 
 Another example with directories:
+
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -m 10 ".txt" technical  
+        grep: technical: Is a directory
+
+As like other commands, `-m` do not interact directly, so we can use `-rm` instead of using `-m`: 
+
+        yoshidanao@yoshidanaonoMacBook-Pro docsearch % grep -rm 10 ".txt" technical
+        technical/biomed/gb-2003-4-5-r34.txt:            20,000), and repeat the process. The Readme.txt file
+        technical/biomed/gb-2001-2-7-research0025.txt:        Pfam_Annotation.txt
+        technical/biomed/gb-2001-2-7-research0025.txt:        Protein_Annotation.txt
+        technical/biomed/gb-2002-3-7-research0037.txt:        README.txt contains instructions for installation and
+        technical/biomed/gb-2002-3-6-software0001.txt:        as .txt files (tab-delimited text, refer to the user's
+        technical/biomed/gb-2002-3-12-research0078.txt:          .txt extension.
+        technical/biomed/gb-2001-2-9-research0037.txt:          hyb2dis.txt in additional data files). More importantly,
+        technical/biomed/gb-2001-2-9-research0037.txt:        hyb2dis.txt: patch file that converts White's hybridize
+        technical/biomed/gb-2001-2-9-research0037.txt:        Training sets(GlycineMedicago.txt,Rhizobia.txt,
+        technical/biomed/gb-2001-2-9-research0037.txt:        Stramenopiles.txt, ZygoChytrid.txt): FASTA-formatted text
+        technical/biomed/gb-2001-2-9-research0037.txt:        Test sets(PsojaeHA.txt, PsojaeMY.txt, PsojaeZO.txt,
+        technical/biomed/gb-2001-2-9-research0037.txt:        MtRHE.txt, DSIR.txt, MHAM.txt, KV0.txt, KV2.txt, KV3.txt):
+        technical/biomed/gb-2001-2-9-research0037.txt:        hyb2dis.txt
+        technical/biomed/gb-2001-2-9-research0037.txt:        hyb2dis.txt
+        technical/biomed/gb-2001-2-9-research0037.txt:        GlycineMedicago.txt
+        technical/biomed/gb-2001-2-9-research0037.txt:        Rhizobia.txt
+        technical/biomed/1471-2105-2-9.txt:            of files (e.g., seq or txt files) or from a
+        ...
+
+I can confirm that `-rm 10` works correctly: there are 10 `technical/biomed/gb-2001-2-9-research0037.txt: <some string>` in 10 lines each, and we can comfirm that each line shows the lines which contains `".txt"`. 
+
+Sometimes `grep -e "<string>" <file/directory>` gives us so long long result, but `-m NUM` or `-rm NUM` can help us to reduce the line of outputs. This command should be helpful when we want to treat/use a small and partial data. For example, we can use a piece of survey collected from many people by using `-m NUM` command in order to build temporal data of tendency or collection.
 
 <b>6.  `--color=always` : </b>
 
 First example with files:
+
+
 
 Another example with directories:
 
@@ -500,7 +545,15 @@ Another example with directories:
 
 <b>7.  `^` : </b>
 
+First example with files:
+
+Another example with directories:
+
 <b>8.  `–f` : </b>
+
+First example with files:
+
+Another example with directories:
 
 
 --------
