@@ -115,6 +115,8 @@ Result of command:
 
 4.  `cd lab7`: change the current directory to be `lab7`
 
+Result of command:
+
     [nayoshida@ieng6-201]:~:315$ cd lab7
     [nayoshida@ieng6-201]:lab7:316$
    
@@ -125,7 +127,7 @@ Result of command:
     javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
     java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
 
-Result of command:
+Result of command 1:
 
     [nayoshida@ieng6-201]:lab7:317$ bash test.sh
     JUnit version 4.13.2
@@ -140,7 +142,7 @@ Result of command:
     FAILURES!!!
     Tests run: 2,  Failures: 1
 
-Result of command:
+Result of command 2:
 
     [nayoshida@ieng6-201]:lab7:320$ bash test.sh
     JUnit version 4.13.2
@@ -151,20 +153,74 @@ Result of command:
 
 6.  `vim ListExamplesTests.java`: allow user to see/edit `ListExamplesTests.java` using `vim` command.
 
-7.  `vim ListExamples.java`: allow user to see/edit `ListExamples.java` using `vim` command.
+7.  `:q`: It is the `vim` command to exit the files opened by `vim <file>`.
 
+8.  `vim ListExamples.java`: allow user to see/edit `ListExamples.java` using `vim` command.
 
-8.  git add .
+9.  `44G`: It is the `vim` command to move current cursor to the desired line. In this case the cursor will be set at `line 44`. I set 44 because in demonstration done by TAs, they indicate the place needed to be fixed is `line 44`. If we do not know the exact position of the wrong code, we have to use another command or arrow button to go there. 
 
+10.  `i`: it will change current mode(default `normal`) to be `insert mode`, and it allows us to edit and insert some codes into the file.
 
-9.  11.  git commit -m "Commited"
+11.  `<escape>`: it will escape from `insert mode` to be `normal mode` to use some command.
 
+12.  `:wq`: It is the `vim` command to save and leave the current file opened by `vim <file>`. `w` itself is for saving, and `q` is for exit. 
 
-10.  git push origin main
+13.  `git add .`: it is to add everything changed in the current directory and its sub-directories to the staging area.
 
+14.  `git commit -m "Commited"`: It is to save a snapshot of commitment to all changes inside the directory indicating `"Commited"`.
 
-11.  history
+Result of command:
 
+    [nayoshida@ieng6-201]:lab7:322$ git commit -m "Commited"
+    [main 21b9337] Commited
+     Committer: Nao Yoshida <nayoshida@ieng6-201.ucsd.edu>
+    Your name and email address were configured automatically based
+    on your username and hostname. Please check that they are accurate.
+    You can suppress this message by setting them explicitly. Run the
+    following command and follow the instructions in your editor to edit
+    your configuration file:
+    
+        git config --global --edit
+    
+    After doing this, you may fix the identity used for this commit with:
+    
+        git commit --amend --reset-author
+    
+     1 file changed, 1 insertion(+), 1 deletion(-)
+
+15.  `git push origin main`: It is to push all changes into the GitHub's appropriate repository worked on, so we can see the updated version in Github too.
+
+Result of command:
+
+    [nayoshida@ieng6-201]:lab7:323$ git push origin main
+    Enumerating objects: 5, done.
+    Counting objects: 100% (5/5), done.
+    Delta compression using up to 8 threads
+    Compressing objects: 100% (1/1), done.
+    Writing objects: 100% (3/3), 291 bytes | 291.00 KiB/s, done.
+    Total 3 (delta 2), reused 2 (delta 2), pack-reused 0
+    remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+    To github.com:NaoY220/lab7.git
+       c5fc7df..21b9337  main -> main
+
+16.  `history`: it is command to see all commands used in terminal. If I log into the remote account, `history` shows commands which were used while I was logging to it. 
+
+Result of command:
+
+    [nayoshida@ieng6-201]:lab7:324$ history
+    1  ls
+    2  git clone git@github.com:NaoY220/lab7.git
+    3  ls
+    4  cd lab7
+    5  ls
+    6  bash test.sh
+    7  vim ListExamplesTests.java
+    8  vim ListExamples.java
+    9  bash test.sh
+    10  git add .
+    11  git commit -m "Commited"
+    12  git push origin main
+    13  history
 
 --------
 
@@ -172,4 +228,4 @@ Completed: 21th May, 2024
 
 Lab due: 21th May, 2024 
 
-GitHub link: 
+GitHub link: https://naoy220.github.io/cse15l-lab-reports/labReport4.html
