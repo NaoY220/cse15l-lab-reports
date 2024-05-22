@@ -35,17 +35,22 @@ Add this lab report to your Github Pages site, and submit a PDF of it as usual.
 
 ***
 
-1. 
+**1. Take a screenshot**
+
+![Image]()
 
 --------
    
-2. 
+**2. Write down exactly which keys you pressed to get to that step, including <enter> and <space> (e.g., cd<space>L<tab><enter> or <down><down><down><down><down><down><down><enter>). For special characters like <enter> or <tab>, write them in angle brackets with code formatting.**
 
 Keys pressed: <up><up><up><up><enter>, <up><up><up><up><enter> The javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java command was 4 up in the search history, so I used up arrow to access it. Then the java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ... command was 4 up in the history, so I accessed and ran it in the same way.
 
 --------
 
-3. 
+**3. Then, summarize the commands you ran and what the effect of those keypresses were.**
+
+
+
 --------
 
 Completed: 21th May, 2024 
