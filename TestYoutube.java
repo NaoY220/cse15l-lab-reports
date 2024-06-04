@@ -11,3 +11,20 @@ public class TestYoutube{
 		List<String> l2 = new ArrayList<String>(Arrays.asList("a", "b"));
 		assertArrayEquals(new String[]{ "a", "b", "x", "y"}, ListExamples.merge(l1, l2).toArray());
   }
+  
+  @Test
+  public void IsCoomentByTest(){
+	  boolean same1 = vc1.isCommentByAuthor(u1);
+  }
+	
+  @Test
+  public void IsCoomentByTest(){
+	  boolean same1 = vc1.isCommentByAuthor(u1);
+  }
+	
+  @Test
+  public void IsCoomentByTest(){
+	  boolean same1 = vc1.isCommentByAuthor(u1);
+  }
+	
+}
