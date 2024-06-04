@@ -1,6 +1,5 @@
-//Nao Yoshida
-//CSE15L SP2024
-//PID A18083203
+import java.util.ArrayList;
+import java.util.List;
 
 class User{
     String username;
@@ -82,7 +81,7 @@ class ReplyComment implements Comment{
 }
 
 class Youtube{
-  //object User
+    //object User
     User u1 = new User("test_username1", "Test User Full Name 1");
     User u2 = new User("test_username2", "Test User Full Name 2");
 
@@ -95,10 +94,10 @@ class Youtube{
     Comment rc2 = new ReplyComment("Thanks for acknowledgment!", 4, u1, rc1);
 
     //object VideoComment 1
-    boolean same1 = vc1.isCommentByAuthor(u1);       //expeceted: true
-    boolean notSame1 = vc1.isCommentByAuthor(u2);    //expeceted: false
-    int likes1 = vc1.totalLikes();                   //expeceted: 10
-    String thread1 = vc1.unrollCommentThread();
+    boolean same1 = vc1.isCommentByAuthor(u1);       //expected: true
+    boolean notSame1 = vc1.isCommentByAuthor(u2);    //expected: false
+    int likes1 = vc1.totalLikes();                   //expected: 10
+    String thread1 = vc1.unrollCommentThread();      //expected: 15
 }
 
 
