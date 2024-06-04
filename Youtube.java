@@ -82,7 +82,23 @@ class ReplyComment implements Comment{
 }
 
 class Youtube{
-  
+  //object User
+    User u1 = new User("test_username1", "Test User Full Name 1");
+    User u2 = new User("test_username2", "Test User Full Name 2");
+
+    //object VideoComment
+    Comment vc1 = new VideoComment("This is a great example to use the Tester Library!", 10, 5, u1);
+    Comment vc2 = new VideoComment("It is fun to learn Java language!", 13, 3, u2);
+    
+    //object ReplyComment
+    Comment rc1 = new ReplyComment("Yeah, I agree!", 7, u2, vc1);
+    Comment rc2 = new ReplyComment("Thanks for acknowledgment!", 4, u1, rc1);
+
+    //object VideoComment 1
+    boolean same1 = vc1.isCommentByAuthor(u1);       //expeceted: true
+    boolean notSame1 = vc1.isCommentByAuthor(u2);    //expeceted: false
+    int likes1 = vc1.totalLikes();                   //expeceted: 10
+    String thread1 = vc1.unrollCommentThread();
 }
 
 
