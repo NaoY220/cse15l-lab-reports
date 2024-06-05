@@ -74,7 +74,7 @@ In addition, you can see the error message `test.sh: line 21: syntax error: unex
 
 **3. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.**
 
-![Image](ProfABottom.png)
+![Image](FollowUpTop.png)
 
 Thank you so much for your advise. Yes, I had a lot of error in my code. 
 First, I forget to put `-1` next to `list.size()`. The last index number is equal to the `list.size()-1`
@@ -115,14 +115,19 @@ Finally, I get by `bash test.sh`:
         
         yay
 
-![Image](ProfABottom.png)
+![Image](FollowUpBottom.png)
 
 **4. At the end, all the information needed about the setup including:**
 
-  - The file & directory structure needed
-  - The contents of each file before fixing the bug
-  - The full command line (or lines) you ran to trigger the bug
-  - A description of what to edit to fix the bug
+- The file & directory structure needed
+
+
+
+- The contents of each file before fixing the bug
+- The full command line (or lines) you ran to trigger the bug
+- A description of what to edit to fix the bug
+
+
 
 ***
 
