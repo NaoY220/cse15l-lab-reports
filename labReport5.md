@@ -59,6 +59,7 @@ Thank you!
 **2. A response from a TA asking a leading question or suggesting a command to try (To be clear, you are mimicking a TA here.)**
 
 
+
 **3. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.**
 
 
