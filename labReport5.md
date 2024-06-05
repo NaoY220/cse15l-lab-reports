@@ -55,10 +55,13 @@ Thank you!
 ![Image](piazzaBottom2.png)
 
 
-
 **2. A response from a TA asking a leading question or suggesting a command to try (To be clear, you are mimicking a TA here.)**
 
+![Image](ProfATop.png)
 
+To solve the problem that you have on `printList(ArrayList)`, pay attention to that you use `static` to your method `printList(ArrayList<Integer> list)`
+
+![Image](ProfABottom.png)
 
 **3. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.**
 
