@@ -170,7 +170,7 @@ before fixed:
                 System.out.print (list.get(i)+ " ");
         }
 
-3) Modified the Test code for printList():
+3) Modified the Test code for `printList()`:
 
         @Test
         public void printAll() {
@@ -184,27 +184,42 @@ before fixed:
    
 before fixed: 
 
+        @Test
+        public void getAll(){
+                MyArrayList list = new MyArrayList();
+                list.add(23);
+                list.add(0);
+                list.add(-14);
+                assertEquals (new int[]{ 23, 0, -14}, list.printList(list));
+        }
 
+4) Put `fi` at the end of `if/else` statement. Since I do not have the main method inside the `MyArrayList` and I use JUnit test, so I deleted everything after the first `if/else` statement:
 
-4) I realized that I forgot to put fi at the end of if/else statement, so I added it to the end of that statement, and since I do not have the main method inside the MyArrayList and I use JUnit test, so I deleted everything:
+        if [[ $? -eq 0 ]]; then
+            echo "yay"
+        else
+            echo "ummm"
+        fi  #I forgot here
 
-    if [[ $? -eq 0 ]]; then
-        echo "yay"
-    else
-        echo "ummm"
-    fi  #I forgot here
+before fixed: 
 
-Finally, I get by bash test.sh:
-
-    yoshidanao@yoshidanaonoMBP files-for-labrep5 % bash test.sh
-    JUnit version 4.13.2
-    ...
-    Time: 0.008
-    
-    OK (3 tests)
-    
-    yay
-
+        if [[ $? -eq 0 ]]; then
+            echo "yay"
+        else
+            echo "ummm"
+            
+        JAVA_FILE="MVArravList.iava"
+        CLASS_NAME="MyArrayList"
+        
+        # Compile the Java program
+        javac $JAVA_FILE
+        
+        if [[ $? -eg 0 ]]; then
+            # Run the Java program if the compilation was successful
+            java $CLASS_NAME
+        else
+            echo "Compilation failed."
+        fi
 
 ***
 
