@@ -31,6 +31,19 @@ You should actually set up and run the scenario from your screenshots. It should
 
 
 
+Hi, I am creating the java file using ArrayList and use functions to display the element of ArrayList. However, I am stacked working on creating JUnit tests. I am trying to call function `printList(ArrayList)` but it says there is an error and I do not figure out how I can remove the red underline on it.
+
+`assertEquals(new int[]{ 23, 0, -14}, list.printList(list));`
+
+I think I have something problem on code in main java rather than java file for testing. However, I do not figure out how I can solve it... I think `list.printList(list)` has problem, and I expect that call function and insert the object itself is problematic. Could you give me some advise? Also, the result run of bash script is following. I see there is problem on line 25, but I think the for loop is correctly implemented since the index of ArrayList is starting from 0.
+
+
+
+
+
+Could you give me some advice? Thank you!
+
+
 **2. A response from a TA asking a leading question or suggesting a command to try (To be clear, you are mimicking a TA here.)**
 
 
