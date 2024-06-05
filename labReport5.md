@@ -59,7 +59,16 @@ Thank you!
 
 ![Image](ProfATop.png)
 
-To solve the problem that you have on `printList(ArrayList)`, pay attention to that you use `static` to your method `printList(ArrayList<Integer> list)`
+To solve the problem that you have on `printList(ArrayList)`, pay attention to your parameter: `printList(ArrayList<Integer> list)`. The parameter accept `ArrayList<Integer>` not the object of `ArrayList object`. To print the contents of `ArrayList object`, you may return String value storing each element of that object rather than setting your method as `void` type. Or, you can change your method to compare content of `ArrayList object` to the `ArrayList<Integer>`parameter. 
+
+For bash script, you can see the sentence `java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 3`, so there should be the problem on setting your range of index to get your value from your `ArrayList object`. You said that there is problem on line 25, but it is not in main java, but it is in `MyArrayListTest`. 
+
+        at MyArrayList.getTheLastElem(MyArrayList.java:28)
+        at MyArrayListTest.testIndexOutOfBounds(MyArrayListTest.java:25)
+
+For `MyArrayList.java`, you have issue on line 28, and you can find the error code. For 25, it should be related to the problem on `printList(ArrayList)`.
+
+In addition, you can see the error message `test.sh: line 21: syntax error: unexpected end of file` at the end of the output in terminal by `bash test.sh`. I see you have the code `javac $JAVA_FILE` and `java $CLASS_NAME`. Check if it works in your terminal. Is there any `main` method in your code?
 
 ![Image](ProfABottom.png)
 
@@ -67,6 +76,11 @@ To solve the problem that you have on `printList(ArrayList)`, pay attention to t
 
 
 **4. At the end, all the information needed about the setup including:**
+
+  - The file & directory structure needed
+  - The contents of each file before fixing the bug
+  - The full command line (or lines) you ran to trigger the bug
+  - A description of what to edit to fix the bug
 
 ***
 
