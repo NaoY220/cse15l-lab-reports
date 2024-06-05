@@ -39,15 +39,15 @@ Hi, I am creating the java file using ArrayList and use functions to display the
 
 I think I have something problem on code in main java rather than java file for testing. However, I do not figure out how I can solve it... I think `list.printList(list)` has problem, and I expect that call function and insert the object itself is problematic. Could you give me some advise? Also, the result run using bash script is following. I see there is problem on line 25, but I think the for loop is correctly implemented since the index of ArrayList is starting from 0.
 
-![Image](MyArrayList.png)
+![Image](bashScript.png)
 
 My java files and sh file are following:
+
+![Image](MyArrayList.png)
 
 ![Image](MyArrayListTest.png)
 
 ![Image](testSH.png)
-
-![Image](bashScript.png)
 
 
 Thank you!
@@ -121,10 +121,22 @@ Finally, I get by `bash test.sh`:
 
 - The file & directory structure needed
 
-
+![Image](FDstructure.png)
 
 - The contents of each file before fixing the bug
+
+![Image](MyArrayList.png)
+
+![Image](MyArrayListTest.png)
+
+![Image](testSH.png)
+  
 - The full command line (or lines) you ran to trigger the bug
+
+![Image](bashScript.png)
+
+Note: I use JUnit test run.
+
 - A description of what to edit to fix the bug
 
 
