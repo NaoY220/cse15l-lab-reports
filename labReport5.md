@@ -68,11 +68,12 @@ For bash script, you can see the sentence `java.lang.IndexOutOfBoundsException: 
 
 For `MyArrayList.java`, you have issue on line 28, and you can find the error code. For 25, it should be related to the problem on `printList(ArrayList)`.
 
-In addition, you can see the error message `test.sh: line 21: syntax error: unexpected end of file` at the end of the output in terminal by `bash test.sh`. I see you have the code `javac $JAVA_FILE` and `java $CLASS_NAME`. Check if it works in your terminal. Is there any `main` method in your code?
+In addition, you can see the error message `test.sh: line 21: syntax error: unexpected end of file` at the end of the output in terminal by `bash test.sh`. Since you do not receive any output "yay" or "ummm", then you should have the error around there. Also, I see you have the code `javac $JAVA_FILE` and `java $CLASS_NAME`. Check if it works in your terminal. Is there any `main` method in your code?
 
 ![Image](ProfABottom.png)
 
 **3. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.**
+
 
 
 **4. At the end, all the information needed about the setup including:**
