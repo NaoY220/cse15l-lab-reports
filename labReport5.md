@@ -41,6 +41,10 @@ I think I have something problem on code in main java rather than java file for 
 
 ![Image](bashScript.png)
 
+My java files and sh file are following:
+
+
+
 Thank you!
 
 ![Image](piazzaBottom2.png)
