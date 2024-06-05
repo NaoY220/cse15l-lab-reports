@@ -231,12 +231,12 @@ In a couple of sentences, describe something you learned from your lab experienc
 
 ----
 
-Sentence here:
+
 
 ***
 
-Completed: th, 2024 
+Completed: June 6th, 2024 
 
-Lab due: th, 2024 
+Lab due: June 6th, 2024 
 
 GitHub link: 
