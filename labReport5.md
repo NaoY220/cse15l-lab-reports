@@ -59,7 +59,7 @@ Thank you!
 
 ![Image](ProfATop.png)
 
-To solve the problem that you have on `printList(ArrayList)`, pay attention to your parameter: `printList(ArrayList<Integer> list)`. The parameter accept `ArrayList<Integer>` not the object of `ArrayList object`. To print the contents of `ArrayList object`, you may return String value storing each element of that object rather than setting your method as `void` type. Or, you can change your method to compare content of `ArrayList object` to the `ArrayList<Integer>`parameter. 
+To solve the problem that you have on `printList(ArrayList)`, pay attention to your parameter: `printList(ArrayList<Integer> list)`. The parameter accept `ArrayList<Integer>` not the object of `ArrayList object`. To print the contents of `ArrayList object`, you may return String value storing each element of that object rather than setting your method as `void` type. 
 
 For bash script, you can see the sentence `java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 3`, so there should be the problem on setting your range of index to get your value from your `ArrayList object`. You said that there is problem on line 25, but it is not in main java, but it is in `MyArrayListTest`. 
 
@@ -74,7 +74,48 @@ In addition, you can see the error message `test.sh: line 21: syntax error: unex
 
 **3. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.**
 
+![Image](ProfABottom.png)
 
+Thank you so much for your advise. Yes, I had a lot of error in my code. 
+First, I forget to put `-1` next to `list.size()`. The last index number is equal to the `list.size()-1`
+
+        public String getTheLastElem() {
+                return "Element at the last index: " + list.get(list.size()-1);
+        }
+
+Second, I changed the contents of method `printList()` as the advise, I cahnged my return type to be String and I created String variable `result` and store each element of ArrayList using for loop with `\n`:
+
+        // function to print all elements
+        public String printList() {
+                String result = "";
+                for (int i = 0; i < list.size(); i++) {
+                    result = result + list.get(i) + "\n";
+                }
+                return result;
+        }
+        
+Also, I modified my Test code as the change in printList():
+        
+Finally, I realized that I forgot to put `fi` at the end of if/else statement, so I added it to the end of that statement, and since I do not have the main method inside the `MyArrayList` and I use JUnit test, so I deleted everything:
+
+        if [[ $? -eq 0 ]]; then
+            echo "yay"
+        else
+            echo "ummm"
+        fi  #I forgot here
+
+Finally, I get by `bash test.sh`:
+
+        yoshidanao@yoshidanaonoMBP files-for-labrep5 % bash test.sh
+        JUnit version 4.13.2
+        ...
+        Time: 0.008
+        
+        OK (3 tests)
+        
+        yay
+
+![Image](ProfABottom.png)
 
 **4. At the end, all the information needed about the setup including:**
 
