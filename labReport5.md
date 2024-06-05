@@ -151,7 +151,7 @@ before fixed:
                 return "Element at the last index: " + list.get(list.size());
         }
 
-2) Changed the contents of method printList() with new return type from void to String. Then, added String variable `result` to store each element of `ArrayList` using for loop with `\n`:
+2) Changed the contents of method `printList()` with new return type from void to String. Then, added String variable `result` to store each element of `ArrayList` using for loop with `\n`:
 
         // function to print all elements
         public String printList() {
