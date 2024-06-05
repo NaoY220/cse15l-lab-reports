@@ -29,7 +29,7 @@ You should actually set up and run the scenario from your screenshots. It should
 
 **1. The original post from a student with a screenshot showing a symptom and a description of a guess at the bug/some sense of what the failure-inducing input is. (Don't actually make the post! Just write the content that would go in such a post)**
 
-![Image](piazzaTop1.png)
+![Image](piazzaTop2.png)
 
 Hi, I am creating the java file using ArrayList and use functions to display the element of ArrayList. However, I am stacked working on creating JUnit tests. I am trying to call function `printList(ArrayList)` but it says there is an error and I do not figure out how I can remove the red underline on it.
 
@@ -37,7 +37,10 @@ Hi, I am creating the java file using ArrayList and use functions to display the
 
 I think I have something problem on code in main java rather than java file for testing. However, I do not figure out how I can solve it... I think `list.printList(list)` has problem, and I expect that call function and insert the object itself is problematic. Could you give me some advise? Also, the result run of bash script is following. I see there is problem on line 25, but I think the for loop is correctly implemented since the index of ArrayList is starting from 0.
 
-![Image](piazzaBottom1.png)
+![Image](printAll().png)
+
+![Image](piazzaBottom2.png)
+
 
 
 
