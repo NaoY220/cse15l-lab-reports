@@ -139,6 +139,71 @@ Note: I use JUnit test run.
 
 - A description of what to edit to fix the bug
 
+1) Put `-1` next to `list.size()` since the last index number is equal to the `list.size()-1`:
+
+        public String getTheLastElem() {
+                return "Element at the last index: " + list.get(list.size()-1);
+        }
+
+before fixed: 
+
+        public String getTheLastElem() {
+                return "Element at the last index: " + list.get(list.size());
+        }
+
+2) Changed the contents of method printList() with new return type from void to String. Then, added String variable `result` to store each element of `ArrayList` using for loop with `\n`:
+
+        // function to print all elements
+        public String printList() {
+                String result = "";
+                for (int i = 0; i < list.size(); i++) {
+                        result = result + list.get(i) + "\n";
+                }
+                return result;
+        }
+
+before fixed: 
+
+        // function to print all elements
+        public static void printList (ArrayList<Integer> list) {
+                for (int i = 0; i < list.size(); it+) {
+                System.out.print (list.get(i)+ " ");
+        }
+
+3) Modified the Test code for printList():
+
+        @Test
+        public void printAll() {
+                MyArrayList list = new MyArrayList();
+                list.add(23);
+                list.add(0);
+                list.add(-14);
+
+                assertEquals("23\n0\n-14\n", list.printList());
+        }
+   
+before fixed: 
+
+
+
+4) I realized that I forgot to put fi at the end of if/else statement, so I added it to the end of that statement, and since I do not have the main method inside the MyArrayList and I use JUnit test, so I deleted everything:
+
+    if [[ $? -eq 0 ]]; then
+        echo "yay"
+    else
+        echo "ummm"
+    fi  #I forgot here
+
+Finally, I get by bash test.sh:
+
+    yoshidanao@yoshidanaonoMBP files-for-labrep5 % bash test.sh
+    JUnit version 4.13.2
+    ...
+    Time: 0.008
+    
+    OK (3 tests)
+    
+    yay
 
 
 ***
