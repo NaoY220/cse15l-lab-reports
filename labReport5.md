@@ -229,10 +229,7 @@ before fixed:
 
 In a couple of sentences, describe something you learned from your lab experience in the second half of this quarter that you didn't know before. It could be a technical topic we addressed specifically, something cool you found out on your own building on labs, something you learned from a tutor or classmate, and so on. It doesn't have to be specifically related to a lab writeup, we just want to hear about cool things you learned!
 
-----
-
-During the second half of this quarter, there were a lot new commands such that `VIM` and some additional command which we can use in bash like `grep`, `find` and `wc`... It was interesting to know that we can edit files or do a lot tasks with only using Terminal since I had learned languages using IDEs rather than using Terminal command till I came here. I am really enjoying learning new things and it should help me a lot in the future with programming!
-
+--> During the second half of this quarter, there were a lot new commands such that `VIM` and some additional command which we can use in bash like `grep`, `find` and `wc`... It was interesting to know that we can edit files or do a lot tasks with only using Terminal since I had learned languages using IDEs rather than using Terminal command till I came here. I am really enjoying learning new things and it should help me a lot in the future with programming!
 ***
 
 Completed: June 6th, 2024 
