@@ -35,6 +35,8 @@ Hi, I am creating the java file using ArrayList and use functions to display the
 
 `assertEquals(new int[]{ 23, 0, -14}, list.printList(list));`
 
+![Image](printAll().png)
+
 I think I have something problem on code in main java rather than java file for testing. However, I do not figure out how I can solve it... I think `list.printList(list)` has problem, and I expect that call function and insert the object itself is problematic. Could you give me some advise? Also, the result run of bash script is following. I see there is problem on line 25, but I think the for loop is correctly implemented since the index of ArrayList is starting from 0.
 
 ![Image](printAll().png)
